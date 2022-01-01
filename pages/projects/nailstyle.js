@@ -1,5 +1,9 @@
 const NailStyle = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h1>NailStyle</h1>
+    </div>
+  );
 };
 
 export default NailStyle;

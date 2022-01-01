@@ -1,6 +1,9 @@
 @use "./variables" as var;
 @use "./mixins";
 
+/* Only put element selectors (e.g. nav) in here */
+/* You can test classes in here, but have to move it to its respective module after. */
+
 html,
 body {
   padding: 0;
@@ -14,8 +17,10 @@ a {
 }
 
 .master-container {
-  padding: 2em;
-  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+
+  /*padding: 2em 5em;*/
   margin: 0 auto;
 
   @include mixins.mediaQuery(mobile) {
@@ -28,7 +33,38 @@ a {
     background-color: yellow;
   }
   @include mixins.mediaQuery(desktop) {
-    background-color: var.$primary-red;
+    background-color: rgb(230, 230, 230);
+  }
+}
+
+/* move to Layout.module.scss */
+.row-container {
+  display: flex;
+  background-color: lightgreen;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  width: 25%;
+}
+
+.content-container {
+  width: 75%;
+}
+
+.footer-container {
+  display: flex;
+}
+
+hr {
+  display: none;
+  width: 100%;
+
+  @include mixins.mediaQuery(laptop) {
+    display: flex;
   }
 }
 
@@ -38,5 +74,8 @@ nav {
   align-items: flex-start;
 }
 
-nav a {
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
