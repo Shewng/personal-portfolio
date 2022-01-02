@@ -1,0 +1,9 @@
+@use "../mixins";
+
+.synopsis-container {
+  flex-direction: column;
+
+  @include mixins.mediaQuery(laptop) {
+    display: flex;
+  }
+}

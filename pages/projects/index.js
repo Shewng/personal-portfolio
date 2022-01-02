@@ -37,7 +37,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div className="project-container">
       <h1>projects</h1>
       <Link href="/projects/nailstyle">
         <a>
@@ -57,12 +57,17 @@ const Projects = () => {
           />
         </a>
       </Link>
-      {/**
+
       <Link href="/projects/portfolio">
         <a>
-          <Project projectName="Personal Portfolio" />
+          <Project
+            projectName={menjiObj.projectName}
+            description="yessirskiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+            technologies={menjiObj.technologies}
+          />
         </a>
       </Link>
+      {/**
       <Link href="/projects/makeapp">
         <a>
           <Project projectName="MakeApp" />

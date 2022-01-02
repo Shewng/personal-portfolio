@@ -2,7 +2,7 @@ import React from "react";
 
 function Project(props) {
   const listTech = props.technologies.map((tech, i) => (
-    <li key={tech.id}>{tech}</li>
+    <li key={tech}>{tech}</li>
   ));
 
   return (

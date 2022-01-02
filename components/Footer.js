@@ -1,21 +1,22 @@
 import React from "react";
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import styles from "../styles/components/Footer.module.scss";
 
 function Footer() {
   return (
     <footer>
-      <div className="copyright">© 2021 Samuel Wong</div>
-      <div className="social-media">
-        <a>
-          <AiOutlineMail />
+      <div className={styles["social-media"]}>
+        <a href="mailto:samuelw098@gmail.com">
+          <AiOutlineMail size={22} />
         </a>
-        <a>
-          <AiFillLinkedin />
+        <a href="https://www.linkedin.com/in/shewng">
+          <AiFillLinkedin size={22} />
         </a>
-        <a>
-          <AiFillGithub />
+        <a href="https://github.com/Shewng">
+          <AiFillGithub size={22} />
         </a>
       </div>
+      <div className={styles.copyright}>© 2021 Samuel Wong</div>
     </footer>
   );
 }
