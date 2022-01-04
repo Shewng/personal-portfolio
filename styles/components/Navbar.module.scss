@@ -1,4 +1,60 @@
-.navbar-links {
+@use "../mixins";
+@use "../variables" as var;
+
+.navbar {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0 1.25em;
+
+  @include mixins.mediaQuery(tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-family: var.$kolker;
+  font-size: 4em;
+}
+
+.links-container {
+  width: 100%;
+}
+
+.nav-dropdown {
+  cursor: pointer;
+
+  @include mixins.mediaQuery(tablet) {
+    display: none;
+  }
+}
+
+.navbar-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: var.$primary-font;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+
+  a {
+    padding: 0.5em 0;
+  }
+
+  @include mixins.mediaQuery(tablet) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.open {
+  display: flex;
 }
