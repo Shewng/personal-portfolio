@@ -4,11 +4,15 @@
 /* Only put element selectors (e.g. nav) in here */
 /* You can test classes in here, but have to move it to its respective module after. */
 
+* {
+  scrollbar-width: none;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  color: var.$primary-font;
+  /*color: var.$primary-font;*/ //might add this later.
   font-family: var.$fira;
 }
 
@@ -17,86 +21,16 @@ a {
   text-decoration: none;
 }
 
-.master-container {
-  display: flex;
-  flex-direction: column;
-  /*padding: 2em 5em;*/
-  margin: 0 auto;
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 100px;
-
-  @include mixins.mediaQuery(mobile) {
-    background-color: aqua;
-  }
-  @include mixins.mediaQuery(tablet) {
-    background-color: green;
-  }
-  @include mixins.mediaQuery(laptop) {
-    background-color: yellow;
-  }
-  @include mixins.mediaQuery(desktop) {
-    background-color: rgb(230, 230, 230);
-  }
-}
-
-/* move to Layout.module.scss */
-.row-container {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgreen;
-  width: 100%;
-
-  @include mixins.mediaQuery(tablet) {
-    flex-direction: row;
-  }
-}
-
-.navbar-container {
-  display: flex;
-  flex-direction: column;
-  background-color: lightblue;
-  width: 100%;
-
-  @include mixins.mediaQuery(tablet) {
-    width: 25%;
-  }
-}
-
-.content-container {
-  width: 100%;
-  @include mixins.mediaQuery(tablet) {
-    width: 75%;
-  }
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 hr {
+  display: flex;
+  margin: 0;
+  height: 2px;
+  background-color: #eeeeee;
+  border: 0;
   display: none;
-  width: 100%;
+  width: 80%;
 
-  @include mixins.mediaQuery(laptop) {
+  @include mixins.mediaQuery(tablet) {
     display: flex;
   }
-}
-
-nav {
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }

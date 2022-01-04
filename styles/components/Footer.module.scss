@@ -1,9 +1,29 @@
 @use "../variables" as var;
+@use "../mixins";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include mixins.mediaQuery(tablet) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2.25em;
+  }
+}
 
 .copyright {
   font-weight: 300;
   font-size: 0.85em;
   margin-top: 0.5em;
+
+  @include mixins.mediaQuery(tablet) {
+    font-size: 0.7em;
+    margin-top: 0;
+  }
 }
 
 .social-media a {

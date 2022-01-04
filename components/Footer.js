@@ -4,7 +4,7 @@ import styles from "../styles/components/Footer.module.scss";
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles["social-media"]}>
         <a href="mailto:samuelw098@gmail.com">
           <AiOutlineMail size={22} />

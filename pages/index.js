@@ -14,7 +14,15 @@ export default function Home() {
       </Head>
 
       <div className={styles["home-container"]}>
-        <Image src={gif} alt="Gif of the homepage" width={800} height={1200} />
+        <div className={styles["image-container"]}>
+          <Image
+            src={gif}
+            alt="Gif of the homepage"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div>
       </div>
     </>
   );
