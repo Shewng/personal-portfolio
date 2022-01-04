@@ -13,16 +13,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles["home-container"]}>
-        <div className={styles["image-container"]}>
-          <Image
-            src={gif}
-            alt="Gif of the homepage"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
-        </div>
+      <div className={styles["image-container"]}>
+        <Image
+          src={gif}
+          alt="Gif of the homepage"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
       </div>
     </>
   );

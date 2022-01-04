@@ -1,18 +1,4 @@
-@use "../mixins";
-
-.home-container {
-  width: 100%;
-  height: 100%;
-
-  @include mixins.mediaQuery(tablet) {
-  }
-}
-
 .image-container {
   position: relative;
-
   min-height: 770px;
-
-  @include mixins.mediaQuery(tablet) {
-  }
 }
