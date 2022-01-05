@@ -1,15 +1,18 @@
 import React from "react";
+import styles from "../styles/components/Project.module.scss";
 
-function Project(props) {
-  const listTech = props.technologies.map((tech, i) => (
-    <li key={tech}>{tech}</li>
-  ));
+function Project({ projectName, description, technologies }) {
+  console.log("tech: " + technologies);
+  console.log("desc: " + description);
+
+  console.log("name: " + projectName);
+  const listTech = technologies.map((tech, i) => <li key={tech}>{tech}</li>);
 
   return (
-    <div>
-      <h1>{props.projectName}</h1>
-      <p>{props.description}</p>
-      <ul>{listTech}</ul>
+    <div className={styles["project-container"]}>
+      <h1 className={styles["project-title"]}>{projectName}</h1>
+      <p className={styles["project-description"]}>{description}</p>
+      <ul className={styles["project-tech"]}>{listTech}</ul>
       {/**
       <div>
         {props.technologies.map((tech) => {

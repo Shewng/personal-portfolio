@@ -55,7 +55,7 @@ const About = () => {
     <div className={styles["about-container"]}>
       <div className={styles["about-row-container"]}>
         <div className={styles["about-me-container"]}>
-          <h3 className={styles["about-title"]}>about me</h3>
+          <h3>about me</h3>
           <p>
             Hello, my name is <span>Samuel</span> and I’m a graduated student
             from the University of Calgary with a BSc degree in Computer
@@ -89,7 +89,7 @@ const About = () => {
       </div>
 
       <div className={styles["skillset-container"]}>
-        <h3 className={styles["about-title"]}>skillset</h3>
+        <h3>skillset</h3>
 
         <div className={styles["skills-container"]}>
           <div className={styles["skills-column"]}>

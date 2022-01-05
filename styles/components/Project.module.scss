@@ -1,0 +1,39 @@
+@use "../variables" as var;
+
+.project-container {
+  padding: 1.75em;
+}
+
+.project-title {
+  font-family: var.$roboto;
+  font-size: 1.75em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.project-description {
+  font-family: var.$fira;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 25px;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+.project-tech {
+  font-family: var.$duru;
+  font-size: 0.85em;
+  font-weight: 300;
+
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    padding: 0;
+    padding-right: 1.75em;
+    line-height: 25px;
+  }
+}
