@@ -1,30 +1,19 @@
 @use "../variables" as var;
 @use "../mixins";
 
+/********** ABOUT CSS **********/
+
 .about-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
-
-  @include mixins.mediaQuery(tablet) {
-    align-items: flex-start;
-  }
-
-  @include mixins.mediaQuery(laptop) {
-    flex-direction: row;
-  }
 }
 
 .about-row-container {
-  padding: 0 0.5em;
-
-  h3 {
-    font-family: var.$roboto;
-    font-size: 2em;
-    font-weight: 300;
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0.75em;
 
   p {
     font-family: var.$fira;
@@ -39,9 +28,98 @@
   p span {
     color: var.$primary-red;
   }
+
+  @include mixins.mediaQuery(tablet) {
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  @include mixins.mediaQuery(laptop) {
+    flex-direction: row;
+  }
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  font-family: var.$roboto;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
 }
 
 .image-container {
-  margin: 0 0.5em;
   max-width: 425px;
+  margin-bottom: 3em;
+
+  @include mixins.mediaQuery(laptop) {
+    margin-left: 1.5em;
+  }
+}
+
+/********** SKILLSET CSS **********/
+
+.skillset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0.75em;
+
+  ul {
+    margin: 0;
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+  }
+
+  li {
+    list-style: none;
+    font-family: var.$fira;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 30px;
+  }
+
+  @include mixins.mediaQuery(tablet) {
+    padding: 0;
+  }
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include mixins.mediaQuery(laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skill-title {
+  font-family: var.$fira;
+  font-weight: 500;
+  font-size: 1.05em;
+  letter-spacing: 1px;
+  margin: 1em 0;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5em;
+}
+
+.skill {
+  font-family: var.$fira;
+  font-weight: 500;
+  font-size: 1.25em;
 }

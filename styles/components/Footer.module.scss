@@ -17,7 +17,7 @@
 
 .copyright {
   font-weight: 300;
-  font-size: 0.85em;
+  font-size: 0.75em;
   margin-top: 0.5em;
 
   @include mixins.mediaQuery(tablet) {
@@ -27,7 +27,7 @@
 }
 
 .social-media a {
-  margin: 0.15em;
+  margin: 0 0.15em;
 }
 
 .social-media a:hover {

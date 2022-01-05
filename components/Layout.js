@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <div className={styles["navbar-container"]}>
           <Navbar />
           {/**only display synopsis if we are on home*/}
-          {router.asPath === "/" ? (
+          {router.asPath !== "/about" ? (
             <>
               <hr className={styles["synopsis-line"]} /> <Synopsis />
             </>
