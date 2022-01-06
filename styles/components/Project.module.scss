@@ -1,7 +1,12 @@
 @use "../variables" as var;
+@use "../mixins";
 
 .project-container {
-  padding: 1.75em;
+  padding: 2.25em;
+  width: auto;
+  @include mixins.mediaQuery(laptop) {
+    width: 75%;
+  }
 }
 
 .project-title {
@@ -12,12 +17,14 @@
 }
 
 .project-description {
-  font-family: var.$fira;
-  font-size: 0.9em;
+  font-family: var.$duru;
+  font-size: 0.85em;
   font-weight: 300;
   line-height: 25px;
+  letter-spacing: -0.5px;
   margin-top: 1.5em;
   margin-bottom: 2em;
+  width: auto;
 }
 
 .project-tech {

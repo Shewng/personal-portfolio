@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/components/Project.module.scss";
+import Image from "next/image";
 
 function Project({ projectName, description, technologies }) {
   console.log("tech: " + technologies);

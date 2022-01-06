@@ -75,7 +75,8 @@ const Projects = () => {
 
   const chaisweetObj = {
     projectName: "ChaiSweetCookies",
-    description: "",
+    description:
+      "Work-in-progress website built on React for my sister’s small local business. She needed her own site in order to sell, promote and showcase her business in a more professional manner. Informed by her suggestions and other user feedback, I designed and developed the site with the intention of a lighthearted, jovial (comforting, playful, spirited) aesthetic.",
     technologies: [
       "HTML",
       "SCSS",
@@ -90,9 +91,9 @@ const Projects = () => {
   return (
     <div className={styles["projects-container"]}>
       <h3>projects</h3>
-      <div className={styles["project-display"]}>
-        <Link href="/projects/nailstyle">
-          <a>
+      <Link href="/projects/nailstyle">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -102,12 +103,12 @@ const Projects = () => {
               />
             </div>
             <Project {...nailstyleObj} />
-          </a>
-        </Link>
-      </div>
-      <div className={styles["project-display"]}>
-        <Link href="/projects/menji">
-          <a>
+          </div>
+        </a>
+      </Link>
+      <Link href="/projects/menji">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -117,13 +118,13 @@ const Projects = () => {
               />
             </div>
             <Project {...menjiObj} />
-          </a>
-        </Link>
-      </div>
+          </div>
+        </a>
+      </Link>
 
-      <div className={styles["project-display"]}>
-        <Link href="/projects/portfolio">
-          <a>
+      <Link href="/projects/portfolio">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -133,13 +134,13 @@ const Projects = () => {
               />
             </div>
             <Project {...portfolioObj} />
-          </a>
-        </Link>
-      </div>
+          </div>
+        </a>
+      </Link>
 
-      <div className={styles["project-display"]}>
-        <Link href="/projects/makeapp">
-          <a>
+      <Link href="/projects/makeapp">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -149,12 +150,12 @@ const Projects = () => {
               />
             </div>
             <Project {...makeappObj} />
-          </a>
-        </Link>
-      </div>
-      <div className={styles["project-display"]}>
-        <Link href="/projects/pvz">
-          <a>
+          </div>
+        </a>
+      </Link>
+      <Link href="/projects/pvz">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -164,12 +165,12 @@ const Projects = () => {
               />
             </div>
             <Project {...pvzObj} />
-          </a>
-        </Link>
-      </div>
-      <div className={styles["project-display"]}>
-        <Link href="/projects/minesweeper">
-          <a>
+          </div>
+        </a>
+      </Link>
+      <Link href="/projects/minesweeper">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -179,12 +180,13 @@ const Projects = () => {
               />
             </div>
             <Project {...minesweeperObj} />
-          </a>
-        </Link>
-      </div>
-      <div className={styles["project-display"]}>
-        <Link href="/projects/smartspace">
-          <a>
+          </div>
+        </a>
+      </Link>
+
+      <Link href="/projects/smartspace">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -194,12 +196,13 @@ const Projects = () => {
               />
             </div>
             <Project {...smartspaceObj} />
-          </a>
-        </Link>
-      </div>
-      <div className={styles["project-display"]}>
-        <Link href="/projects/chaisweetbakery">
-          <a>
+          </div>
+        </a>
+      </Link>
+
+      <Link href="/projects/chaisweetbakery">
+        <a className={styles.link}>
+          <div className={styles["project-display"]}>
             <div className={styles["image-container"]}>
               <Image
                 src={placeholder}
@@ -209,9 +212,9 @@ const Projects = () => {
               />
             </div>
             <Project {...chaisweetObj} />
-          </a>
-        </Link>
-      </div>
+          </div>
+        </a>
+      </Link>
     </div>
   );
 };
