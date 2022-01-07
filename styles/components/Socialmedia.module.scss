@@ -1,0 +1,9 @@
+@use "../variables" as var;
+
+.social-media a {
+  margin: 0 0.15em;
+}
+
+.social-media a:hover {
+  color: var.$primary-red;
+}
