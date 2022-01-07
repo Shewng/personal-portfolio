@@ -4,6 +4,16 @@
 .project-container {
   padding: 2.25em;
   width: auto;
+
+  a {
+    display: block;
+    width: fit-content;
+  }
+
+  a:hover {
+    color: var.$primary-red;
+  }
+
   @include mixins.mediaQuery(laptop) {
     width: 75%;
   }
@@ -22,8 +32,9 @@
   font-weight: 300;
   line-height: 25px;
   letter-spacing: -0.5px;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
   width: auto;
 }
 
@@ -32,7 +43,10 @@
   font-size: 0.85em;
   font-weight: 300;
 
+  margin: 0;
   padding: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
   list-style: none;
 
   display: flex;
@@ -42,5 +56,21 @@
     padding: 0;
     padding-right: 1.75em;
     line-height: 25px;
+  }
+}
+
+.project-links {
+  display: flex;
+  font-family: var.$roboto;
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 2.5em;
+  list-style: none;
+  text-decoration: underline;
+
+  li {
+    margin-right: 1em;
   }
 }

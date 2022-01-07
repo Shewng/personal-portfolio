@@ -21,7 +21,6 @@
   margin-top: 0.5em;
 
   @include mixins.mediaQuery(tablet) {
-    font-size: 0.7em;
     margin-top: 0;
   }
 }

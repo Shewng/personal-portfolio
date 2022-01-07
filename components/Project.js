@@ -1,27 +1,37 @@
 import React from "react";
 import styles from "../styles/components/Project.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
-function Project({ projectName, description, technologies }) {
-  console.log("tech: " + technologies);
-  console.log("desc: " + description);
-
-  console.log("name: " + projectName);
-  const listTech = technologies.map((tech, i) => <li key={tech}>{tech}</li>);
+function Project(props) {
+  const { projectName, description, technologies, links } = props;
+  const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
   return (
     <div className={styles["project-container"]}>
-      <h1 className={styles["project-title"]}>{projectName}</h1>
+      <Link href="/projects/nailstyle">
+        <a>
+          <h1 className={styles["project-title"]}>{projectName}</h1>
+        </a>
+      </Link>
       <p className={styles["project-description"]}>{description}</p>
-      <ul className={styles["project-tech"]}>{listTech}</ul>
-      {/**
-      <div>
-        {props.technologies.map((tech) => {
-          <p>tech.name</p>;
-          console.log("tech: " + tech.name);
-        })}
-      </div>
-       */}
+      <ul className={styles["project-tech"]}>{listTechs}</ul>
+      <ul className={styles["project-links"]}>
+        <li className="github">
+          {links[0] !== "" ? (
+            <a href={links[0]} target="_blank" rel="noopener noreferrer">
+              github
+            </a>
+          ) : null}
+        </li>
+        <li className="external">
+          {links[1] !== "" ? (
+            <a href={links[1]} target="_blank" rel="noopener noreferrer">
+              live site
+            </a>
+          ) : null}
+        </li>
+      </ul>
     </div>
   );
 }
