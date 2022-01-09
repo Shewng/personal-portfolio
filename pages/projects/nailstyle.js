@@ -1,9 +1,9 @@
+import ProjectDisplay from "../../components/projects/ProjectDisplay";
+import { projectsList } from "../../data";
+
 const NailStyle = () => {
-  return (
-    <div>
-      <h1>NailStyle</h1>
-    </div>
-  );
+  const nailstyle = projectsList[0];
+  return <ProjectDisplay {...nailstyle} />;
 };
 
 export default NailStyle;

@@ -2,9 +2,13 @@ export const projectsList = [
   {
     name: "NailStyle",
     route: "/projects/nailstyle",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
-      "Nail Salon website application built on the MERN (MongoDB, Express, React, Node.js) stack to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
+      "Nail Salon website application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
+    longDescription:
+      "Nail Salon website application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and further flesh out full stack skillset." +
+      "\n\nI worked with a friend to revamp a local business’s nail salon website given a list of user requirements, issues to resolve and optimizations to add. We used Figma to build from the ground up, designing prototypes and wireframes to move forward iteratively. The intention was to develop good UX/UI habits to understand our problems from the client’s POV,  ensuring a smooth implementation" +
+      "\n\nNailStyle has an admin terminal for the management of customers, employees and appointments, as well as a page for customers to book appointments. The app features RESTful API architecture, JSON Web Token authentication (for admins) and responsive design for desktop and mobile devices.",
     type: "Personal",
     year: "2021",
     technologies: [
@@ -19,13 +23,18 @@ export const projectsList = [
       "Heroku",
       "Netlify",
     ],
+    images: [
+      "/../public/nightcity.gif",
+      "/../public/nightcity.gif",
+      "/../public/nightcity.gif",
+    ],
     github: "https://github.com/Shewng/NailStyle",
     external: "https://hxnails.ca",
   },
   {
     name: "MENJI.",
     route: "/projects/menji",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Database Management course, mimicking an online eCommerce clothing store. Features a simple RESTful API implementation. Clients can log into their account, browse products, add/remove them from their cart, checkout with personal information and review their orders.",
     type: "University",
@@ -40,77 +49,84 @@ export const projectsList = [
       "MongoDB",
       "Mongoose",
     ],
+    images: ["", "", ""],
     github: "https://github.com/Shewng/Menji",
     external: "",
   },
   {
     name: "Personal Portfolio",
     route: "/projects/portfolio",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "This website was originally envisioned using the JAMstack development architecture, but I decided to keep things simpler and reserve it for another project. I have used plain React, SASS and Javascript for my first website iteration.",
     type: "Personal",
     year: "2021",
     technologies: ["HTML", "SASS", "JavaScript", "React", "Next.js", "Vercel"],
+    images: ["", "", ""],
     github: "https://github.com/Shewng/personal-portfolio",
     external: "",
   },
   {
     name: "MakeApp",
     route: "/projects/makeapp",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my iOS development course, mimicking a social media application based on creating makeupp routines. Built on SwiftUI using Firebase’s Cloud Firestore to manage backend infrastructure.",
     type: "University",
     year: "2020",
     technologies: ["Swift", "Firebase"],
+    images: ["", "", ""],
     github: "https://github.com/Shewng/makeup",
     external: "",
   },
   {
     name: "Plants Vs Zombies Clone",
     route: "/projects/pvz",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java’s class structure to create the plants and zombies. With JavaFX’s Scene Builder, I was able to program a game engine that tracked certain states, swaping between different displays when necessary.",
     type: "University",
     year: "2018",
     technologies: ["Java", "JavaFX"],
+    images: ["", "", ""],
     github: "https://github.com/Shewng/pvz-ms-remake",
     external: "",
   },
   {
     name: "Laser Unlock",
     route: "/projects/laserunlock",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio’s sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.",
     type: "University",
     year: "2020",
     technologies: ["Java", "Android Studio"],
+    images: ["", "", ""],
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
   },
   {
     name: "Minesweeper",
     route: "/projects/minesweeper",
-    mage: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Web-Based systems course, mimicking the popular browser game Minesweeper. Built on Javascript and JQuery to learn about front-end development and responsive design. ",
     type: "University",
     year: "2020",
     technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
+    images: ["", "", ""],
     github: "",
     external: "",
   },
   {
     name: "SmartSpace",
     route: "/projects/smartspace",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description: "",
     type: "University",
     year: "2019",
     technologies: ["Adobe XD"],
+    images: ["", "", ""],
     github: "",
     external:
       "https://xd.adobe.com/view/367c853f-9e22-4e1e-6688-2350bbd28618-404d/?fullscreen&hints=off",
@@ -118,7 +134,7 @@ export const projectsList = [
   {
     name: "ChaiSweetBakery",
     route: "/projects/chaisweetbakery",
-    image: "",
+    previewImg: "/../public/nightcity.gif",
     description:
       "Work-in-progress website built on React for my sister’s small local business. She needed her own site in order to sell, promote and showcase her business in a more professional manner. Informed by her suggestions and other user feedback, I designed and developed the site with the intention of a lighthearted, jovial (comforting, playful, spirited) aesthetic.",
     type: "Personal",
@@ -132,6 +148,7 @@ export const projectsList = [
       "Next.js",
       "Vercel",
     ],
+    images: ["", "", ""],
     github: "https://github.com/Shewng/ChaiSweetBakery",
     external: "",
   },
