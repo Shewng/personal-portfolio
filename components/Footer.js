@@ -9,8 +9,8 @@ function Footer() {
     <>
       {router.asPath === "/contact" ? (
         <footer className={styles.footer}>
+          <span></span>
           <div className={styles.copyright}>© 2021 Samuel Wong</div>
-          <Socialmedia />
         </footer>
       ) : (
         <footer className={styles.footer}>

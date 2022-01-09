@@ -1,5 +1,4 @@
 import styles from "../styles/pages/Contact.module.scss";
-import Socialmedia from "../components/Socialmedia";
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Contact = () => {

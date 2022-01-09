@@ -1,7 +1,26 @@
 @use "../variables" as var;
 @use "../mixins";
 
-.project-container {
+.card-container {
+  display: flex;
+  flex-direction: column;
+
+  @include mixins.mediaQuery(laptop) {
+    flex-direction: row;
+  }
+}
+
+.image-container {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+
+  @include mixins.mediaQuery(laptop) {
+    width: 50%;
+  }
+}
+
+.info-container {
   padding: 2.25em;
   width: auto;
 
@@ -62,7 +81,6 @@
 .project-links {
   display: flex;
   font-family: var.$roboto;
-  cursor: pointer;
 
   margin: 0;
   padding: 0;
@@ -72,5 +90,6 @@
 
   li {
     margin-right: 1em;
+    cursor: pointer;
   }
 }

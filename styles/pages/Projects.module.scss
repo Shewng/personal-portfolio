@@ -1,5 +1,4 @@
 @use "../mixins";
-@use "../variables" as var;
 
 .projects-container {
   padding: 0 0.75em;
@@ -12,31 +11,4 @@
 .project-display {
   border: 1px solid #707070;
   margin: 1.5em 0;
-
-  display: flex;
-  flex-direction: column;
-
-  @include mixins.mediaQuery(laptop) {
-    flex-direction: row;
-  }
-}
-
-.image-container {
-  position: relative;
-  min-height: 400px;
-  width: 100%;
-
-  @include mixins.mediaQuery(laptop) {
-    width: 50%;
-  }
-}
-
-.image:hover {
-  background-color: var.$primary-red;
-}
-
-.box {
-  background-color: #303030;
-  width: auto;
-  height: 300px;
 }

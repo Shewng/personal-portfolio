@@ -95,7 +95,7 @@ const About = () => {
           <div className={styles["skills-column"]}>
             <div className={styles["skill-header"]}>
               <HiCode className={styles.icon} />
-              <h2 className={styles["skill-title"]}>development</h2>
+              <h4>development</h4>
             </div>
             <ul>{devComponents}</ul> {/* list skills */}
           </div>
@@ -103,7 +103,7 @@ const About = () => {
           <div className={styles["skills-column"]}>
             <div className={styles["skill-header"]}>
               <GoGear className={styles.icon} />
-              <h2 className={styles["skill-title"]}>tools</h2>
+              <h4>tools</h4>
             </div>
             <ul>{toolComponents}</ul> {/* list skills */}
           </div>
@@ -111,7 +111,7 @@ const About = () => {
           <div className={styles["skills-column"]}>
             <div className={styles["skill-header"]}>
               <CgIfDesign className={styles.icon} />
-              <h2 className={styles["skill-title"]}>design</h2>
+              <h4>design</h4>
             </div>
             <ul>{designComponents}</ul> {/* list skills */}
           </div>

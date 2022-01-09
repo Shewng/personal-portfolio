@@ -4,6 +4,7 @@ import Router, { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
 import { BsList } from "react-icons/bs";
+//import pdf from "../public/resume.pdf";
 
 function Navbar() {
   const [toggler, setToggler] = useState(false);
@@ -64,7 +65,9 @@ function Navbar() {
             </a>
           </Link>
           <Link href="/resume">
-            <a>resume</a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              resume
+            </a>
           </Link>
         </div>
       </div>

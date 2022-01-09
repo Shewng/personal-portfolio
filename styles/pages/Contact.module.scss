@@ -1,3 +1,5 @@
+@use "../variables" as var;
+
 .social-media {
   display: flex;
   align-items: center;
@@ -5,6 +7,14 @@
   a {
     display: flex;
     align-items: center;
-    margin-right: 1em;
+    margin-right: 1.5em;
+  }
+
+  a:hover {
+    color: var.$primary-red;
+  }
+
+  span {
+    margin-left: 0.25em;
   }
 }
