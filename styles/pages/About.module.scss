@@ -31,11 +31,11 @@
 
   @include mixins.mediaQuery(tablet) {
     padding: 0;
-    align-items: flex-start;
   }
 
   @include mixins.mediaQuery(laptop) {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -90,9 +90,12 @@
   flex-direction: column;
   width: 100%;
 
-  @include mixins.mediaQuery(laptop) {
+  @include mixins.mediaQuery(tablet) {
     flex-direction: row;
     justify-content: space-between;
+  }
+  @include mixins.mediaQuery(laptop) {
+    width: 90%;
   }
 }
 

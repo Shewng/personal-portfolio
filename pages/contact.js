@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div>
       <h3>contact</h3>
-      <p>
+      <p className={styles.message}>
         Fancy a quick chat or message? Want to get to know me more? Have a job
         opportunity or potential idea? Get in touch with my channels of contact
         below.

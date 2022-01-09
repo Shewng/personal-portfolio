@@ -1,5 +1,12 @@
 @use "../variables" as var;
 
+.message {
+  font-family: var.$duru;
+  font-size: 0.85em;
+  letter-spacing: -0.5px;
+  line-height: 25px;
+}
+
 .social-media {
   display: flex;
   align-items: center;

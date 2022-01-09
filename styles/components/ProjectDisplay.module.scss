@@ -14,7 +14,7 @@
 }
 
 .description-container {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
   @include mixins.mediaQuery(laptop) {
     width: 60%;
