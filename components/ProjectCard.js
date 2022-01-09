@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/components/ProjectCard.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import placeholder from "../public/nightcity.gif";
 
 function ProjectCard(props) {
   const {
@@ -15,7 +14,6 @@ function ProjectCard(props) {
     external,
   } = props;
   const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
-  console.log("tech1: " + technologies);
 
   return (
     <div className={styles["card-container"]}>

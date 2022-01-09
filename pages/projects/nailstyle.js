@@ -1,4 +1,4 @@
-import ProjectDisplay from "../../components/projects/ProjectDisplay";
+import ProjectDisplay from "../../components/ProjectDisplay";
 import { projectsList } from "../../data";
 
 const NailStyle = () => {

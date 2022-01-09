@@ -10,8 +10,8 @@
   @include mixins.mediaQuery(tablet) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 0 2.25em;
+
+    padding: 0 2em;
   }
 }
 

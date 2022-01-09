@@ -37,6 +37,10 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Database Management course, mimicking an online eCommerce clothing store. Features a simple RESTful API implementation. Clients can log into their account, browse products, add/remove them from their cart, checkout with personal information and review their orders.",
+    longDescription:
+      "Partnered final project for my Database Management course, mimicking an online eCommerce clothing store. We were tasked with creating a problem and design process, building the entire project through a near full-stack implementation." +
+      "\n\nMenji. utilizes a simple REST implementation alongside MongoDB’s NoSQL database to add, remove and load the products and registered users. HTTP web cookies are used for the login/register process of customers and admins. We were tasked to include a step-by-step procedure of the project, with an emphasis on mapping how our data flowed through numerous interactions. This was achieved by creating relationship model diagrams and documenting API endpoints via the Postman API platform." +
+      "\n\nUsers can browse the merchandise, add/remove them from their cart, checkout the cart with their personal information and review their orders. Admins can view all registered customers, manage the store’s inventory and track orders placed by customers.",
     type: "University",
     year: "2021",
     technologies: [
@@ -49,7 +53,11 @@ export const projectsList = [
       "MongoDB",
       "Mongoose",
     ],
-    images: ["", "", ""],
+    images: [
+      "/../public/nightcity.gif",
+      "/../public/nightcity.gif",
+      "/../public/nightcity.gif",
+    ],
     github: "https://github.com/Shewng/Menji",
     external: "",
   },
@@ -59,10 +67,15 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "This website was originally envisioned using the JAMstack development architecture, but I decided to keep things simpler and reserve it for another project. I have used plain React, SASS and Javascript for my first website iteration.",
+    longDescription: "",
     type: "Personal",
     year: "2021",
     technologies: ["HTML", "SASS", "JavaScript", "React", "Next.js", "Vercel"],
-    images: ["", "", ""],
+    images: [
+      "/../public/nightcity.gif",
+      "/../public/nightcity.gif",
+      "/../public/nightcity.gif",
+    ],
     github: "https://github.com/Shewng/personal-portfolio",
     external: "",
   },
@@ -72,6 +85,7 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my iOS development course, mimicking a social media application based on creating makeupp routines. Built on SwiftUI using Firebase’s Cloud Firestore to manage backend infrastructure.",
+    longDescription: "",
     type: "University",
     year: "2020",
     technologies: ["Swift", "Firebase"],
@@ -85,6 +99,7 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java’s class structure to create the plants and zombies. With JavaFX’s Scene Builder, I was able to program a game engine that tracked certain states, swaping between different displays when necessary.",
+    longDescription: "",
     type: "University",
     year: "2018",
     technologies: ["Java", "JavaFX"],
@@ -98,6 +113,7 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio’s sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.",
+    longDescription: "",
     type: "University",
     year: "2020",
     technologies: ["Java", "Android Studio"],
@@ -111,6 +127,7 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Web-Based systems course, mimicking the popular browser game Minesweeper. Built on Javascript and JQuery to learn about front-end development and responsive design. ",
+    longDescription: "",
     type: "University",
     year: "2020",
     technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
@@ -123,6 +140,7 @@ export const projectsList = [
     route: "/projects/smartspace",
     previewImg: "/../public/nightcity.gif",
     description: "",
+    longDescription: "",
     type: "University",
     year: "2019",
     technologies: ["Adobe XD"],
@@ -137,6 +155,7 @@ export const projectsList = [
     previewImg: "/../public/nightcity.gif",
     description:
       "Work-in-progress website built on React for my sister’s small local business. She needed her own site in order to sell, promote and showcase her business in a more professional manner. Informed by her suggestions and other user feedback, I designed and developed the site with the intention of a lighthearted, jovial (comforting, playful, spirited) aesthetic.",
+    longDescription: "",
     type: "Personal",
     year: "2021",
     technologies: [

@@ -2,11 +2,25 @@
 @use "../variables" as var;
 
 .project-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0 1em;
+
+  @include mixins.mediaQuery(laptop) {
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .description-container {
   margin-bottom: 2em;
+
+  @include mixins.mediaQuery(laptop) {
+    width: 60%;
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
 }
 
 .project-tags {
@@ -57,7 +71,13 @@
   margin: 0.5em 0;
 
   li {
-    padding: 0 1.5em 0 0;
+    padding-right: 1.5em;
+  }
+
+  @include mixins.mediaQuery(laptop) {
+    li {
+      padding-right: 2em;
+    }
   }
 }
 
@@ -87,11 +107,21 @@
 .picture-container {
   padding-top: 1em;
   width: 100%;
+
+  @include mixins.mediaQuery(laptop) {
+    padding: 0;
+    width: 40%;
+  }
 }
 
 .image-container {
   position: relative;
   width: 100%;
+  height: auto;
   min-height: 400px;
   margin-bottom: 1.5em;
+
+  @include mixins.mediaQuery(laptop) {
+    min-height: 250px;
+  }
 }

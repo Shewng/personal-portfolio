@@ -1,9 +1,9 @@
+import ProjectDisplay from "../../components/ProjectDisplay";
+import { projectsList } from "../../data";
+
 const Menji = () => {
-  return (
-    <div className="menji-container">
-      <h1>Menji</h1>
-    </div>
-  );
+  const menji = projectsList[1];
+  return <ProjectDisplay {...menji} />;
 };
 
 export default Menji;

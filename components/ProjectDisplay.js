@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { AiOutlineCode, AiOutlineDeploymentUnit } from "react-icons/ai";
-import styles from "../../styles/components/ProjectDisplay.module.scss";
+import styles from "../styles/components/ProjectDisplay.module.scss";
 
 function ProjectDisplay(props) {
   const {
