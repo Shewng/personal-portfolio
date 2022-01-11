@@ -10,12 +10,12 @@ function Footer() {
       {router.asPath === "/contact" ? (
         <footer className={styles.footer}>
           <span></span>
-          <div className={styles.copyright}>© 2021 Samuel Wong</div>
+          <div className={styles.copyright}>© 2022 Samuel Wong</div>
         </footer>
       ) : (
         <footer className={styles.footer}>
           <Socialmedia />
-          <div className={styles.copyright}>© 2021 Samuel Wong</div>
+          <div className={styles.copyright}>© 2022 Samuel Wong</div>
         </footer>
       )}
     </>

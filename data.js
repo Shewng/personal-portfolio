@@ -2,7 +2,7 @@ export const projectsList = [
   {
     name: "NailStyle",
     route: "/projects/nailstyle",
-    previewImg: "/../public/nightcity.gif",
+    previewImg: "/../public/test.png",
     description:
       "Nail Salon website application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
     longDescription:
@@ -24,9 +24,9 @@ export const projectsList = [
       "Netlify",
     ],
     images: [
-      "/../public/nightcity.gif",
-      "/../public/nightcity.gif",
-      "/../public/nightcity.gif",
+      "/../public/nailstyle/nailstyle1.png",
+      "/../public/nailstyle/nailstyle2.png",
+      "/../public/nailstyle/nailstyle3.png",
     ],
     github: "https://github.com/Shewng/NailStyle",
     external: "https://hxnails.ca",
@@ -54,9 +54,9 @@ export const projectsList = [
       "Mongoose",
     ],
     images: [
-      "/../public/nightcity.gif",
-      "/../public/nightcity.gif",
-      "/../public/nightcity.gif",
+      "/../public/menji/menji1.png",
+      "/../public/menji/menji2.png",
+      "/../public/menji/menji3.png",
     ],
     github: "https://github.com/Shewng/Menji",
     external: "",
@@ -66,7 +66,7 @@ export const projectsList = [
     route: "/projects/portfolio",
     previewImg: "/../public/nightcity.gif",
     description:
-      "This website was originally envisioned using the JAMstack development architecture, but I decided to keep things simpler and reserve it for another project. I have used plain React, SASS and Javascript for my first website iteration.",
+      "My first website iteration, created through Next js and SCSS. My design inspiration was through a combination of minimalism and an avant-garde edge. I hope to create a modular/scalable version in the future, allowing me to fully transform the site into an autobiography of myself.",
     longDescription: "",
     type: "Personal",
     year: "2021",
@@ -77,7 +77,7 @@ export const projectsList = [
       "/../public/nightcity.gif",
     ],
     github: "https://github.com/Shewng/personal-portfolio",
-    external: "",
+    external: "https://shwong.me",
   },
   {
     name: "MakeApp",
@@ -117,11 +117,15 @@ export const projectsList = [
     type: "University",
     year: "2020",
     technologies: ["Java", "Android Studio"],
-    images: ["", "", ""],
+    images: [
+      "/../public/smartspace/smartspace1.png",
+      "/../public/smartspace/smartspace2.png",
+      "/../public/smartspace/smartspace3.png",
+    ],
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
   },
-  {
+  /**{
     name: "Minesweeper",
     route: "/projects/minesweeper",
     previewImg: "/../public/nightcity.gif",
@@ -134,7 +138,7 @@ export const projectsList = [
     images: ["", "", ""],
     github: "",
     external: "",
-  },
+  },*/
   {
     name: "SmartSpace",
     route: "/projects/smartspace",
@@ -144,7 +148,11 @@ export const projectsList = [
     type: "University",
     year: "2019",
     technologies: ["Adobe XD"],
-    images: ["", "", ""],
+    images: [
+      "/../public/smartspace/smartspace1.png",
+      "/../public/smartspace/smartspace2.png",
+      "/../public/smartspace/smartspace3.png",
+    ],
     github: "",
     external:
       "https://xd.adobe.com/view/367c853f-9e22-4e1e-6688-2350bbd28618-404d/?fullscreen&hints=off",
@@ -154,8 +162,8 @@ export const projectsList = [
     route: "/projects/chaisweetbakery",
     previewImg: "/../public/nightcity.gif",
     description:
-      "Work-in-progress website built on React for my sister’s small local business. She needed her own site in order to sell, promote and showcase her business in a more professional manner. Informed by her suggestions and other user feedback, I designed and developed the site with the intention of a lighthearted, jovial (comforting, playful, spirited) aesthetic.",
-    longDescription: "",
+      "Work-in-progress website built on React for my sister’s small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations.  Informed by suggestions and user feedback, I designed and developed the site with the intention of a lighthearted, jovial (comforting, playful, spirited) aesthetic.",
+    longDescription: "" + "" + "",
     type: "Personal",
     year: "2021",
     technologies: [

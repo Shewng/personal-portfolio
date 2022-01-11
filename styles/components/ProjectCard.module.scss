@@ -15,9 +15,16 @@
   min-height: 400px;
   width: 100%;
 
+  filter: grayscale(1);
+  transition: all 0.15s ease;
+
   @include mixins.mediaQuery(laptop) {
     width: 50%;
   }
+}
+
+.image-container:hover {
+  filter: grayscale(0);
 }
 
 .info-container {

@@ -24,7 +24,7 @@ function ProjectCard(props) {
               src={previewImg}
               alt="Project Preview Picture"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
             />
           </a>
         </Link>

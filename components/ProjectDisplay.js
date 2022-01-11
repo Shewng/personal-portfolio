@@ -64,24 +64,27 @@ function ProjectDisplay(props) {
           <Image
             src={images[0]}
             alt="Project Image"
+            width={1}
+            height={1}
             layout="fill"
-            objectFit="cover"
           />
         </div>
         <div className={styles["image-container"]}>
           <Image
             src={images[1]}
             alt="Project Image"
+            width={1}
+            height={1}
             layout="fill"
-            objectFit="cover"
           />
         </div>
         <div className={styles["image-container"]}>
           <Image
             src={images[2]}
             alt="Project Image"
+            width={1}
+            height={1}
             layout="fill"
-            objectFit="cover"
           />
         </div>
       </div>
