@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { Router, useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
 import { BsList } from "react-icons/bs";
@@ -10,8 +10,13 @@ import { projectsList } from "../data";
 function Navbar() {
   const [toggler, setToggler] = useState(false);
   const router = useRouter();
+  const list = projectsList.map((project) => {
+    return project.route;
+  });
+  console.log(list);
 
   const toggleNavbar = () => setToggler((prev) => !prev); //toggle state for hamburger menu
+  const closeNavbar = () => setToggler((prev) => (prev = false));
 
   useEffect(() => {
     if (router.asPath === "/" || "/about" || "/contact" ? styles.off : "") {
@@ -40,7 +45,7 @@ function Navbar() {
         <Link href="/">
           <a
             className={router.asPath === "/" ? styles.active : ""}
-            onClick={() => toggleNavbar()}
+            onClick={() => closeNavbar()}
           >
             home
           </a>
@@ -48,20 +53,25 @@ function Navbar() {
         <Link href="/about">
           <a
             className={router.asPath === "/about" ? styles.active : ""}
-            onClick={() => toggleNavbar()}
+            onClick={() => closeNavbar()}
           >
             about
           </a>
         </Link>
         <Link href="/projects">
           <a
-            className={router.asPath === "/projects" ? styles.active : ""}
-            onClick={() => toggleNavbar()}
+            className={
+              router.asPath !== "/" &&
+              router.asPath !== "/about" &&
+              router.asPath !== "/contact"
+                ? styles.active
+                : ""
+            }
+            onClick={() => closeNavbar()}
           >
             projects
           </a>
         </Link>
-        <div></div>
 
         <div
           className={`${styles["inner-nav-projects"]} ${
@@ -81,7 +91,7 @@ function Navbar() {
                   className={
                     router.asPath === project.route ? styles.active : ""
                   }
-                  onClick={() => toggleNavbar()}
+                  onClick={() => closeNavbar()}
                 >
                   <li className="inner-project">{project.name}</li>
                 </a>
@@ -94,7 +104,7 @@ function Navbar() {
         <Link href="/contact">
           <a
             className={router.asPath === "/contact" ? styles.active : ""}
-            onClick={() => toggleNavbar()}
+            onClick={() => closeNavbar()}
           >
             contact
           </a>
@@ -105,6 +115,7 @@ function Navbar() {
           </a>
         </Link>
       </div>
+      <hr className={styles["synopsis-line"]} />
     </nav>
   );
 }
