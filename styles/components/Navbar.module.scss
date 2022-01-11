@@ -39,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   color: var.$primary-font;
   letter-spacing: 1px;
   font-size: 0.9em;
@@ -71,19 +72,13 @@
   opacity: 1;
   transition: visibility 0.1s ease, opacity 0.05s ease, max-height 0.15s ease;
   max-height: 550px;
-
-  hr {
-    width: 110%;
-  }
 }
 
 .inner-nav-projects {
   display: none;
   flex-direction: column;
-  align-items: center;
 
   background-color: #f7f7f7;
-  width: 100%;
   padding: 0 1.5em;
 
   ul {
@@ -98,30 +93,53 @@
   li {
     font-size: 0.85em;
   }
+
+  @include mixins.mediaQuery(tablet) {
+    flex-direction: row;
+    background-color: white;
+    padding: 0;
+
+    ul {
+      margin: 0.5em 0;
+      align-items: flex-start;
+    }
+  }
 }
 
-.line {
+.line1 {
   display: block;
   margin: 0;
   height: 2px;
   background-color: #eeeeee;
   border: 0;
-  width: 100%;
-}
-/*
-.open {
-  display: flex;
-  height: 550px;
+  width: 110%;
 
-  hr {
-    width: 110%;
+  // remove this line on smaller screens
+  @include mixins.mediaQuery(tablet) {
+    display: none;
   }
 }
-*/
+
+.line2 {
+  display: none;
+  margin: 0.5em 1em 0.5em 1.5em;
+  height: auto;
+  background-color: #eeeeee;
+  border: 0;
+  width: 3px;
+
+  // only show the vertical line on bigger screens
+  @include mixins.mediaQuery(tablet) {
+    display: block;
+  }
+}
+
+//highlight the link of the page we are on
 .active {
   color: var.$primary-red;
 }
 
+//toggle inner projects
 .on {
   display: flex;
 }

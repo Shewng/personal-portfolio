@@ -72,7 +72,8 @@ function Navbar() {
               : ""
           }`}
         >
-          <hr className={styles.line} />
+          <hr className={styles.line2} />
+          <hr className={styles.line1} />
           <ul>
             {projectsList.map((project) => (
               <Link href={project.route}>
@@ -87,8 +88,9 @@ function Navbar() {
               </Link>
             ))}
           </ul>
-          <hr className={styles.line} />
+          <hr className={styles.line1} />
         </div>
+
         <Link href="/contact">
           <a
             className={router.asPath === "/contact" ? styles.active : ""}
