@@ -19,15 +19,19 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+a:hover {
+  color: var.$primary-red;
 }
 
 hr {
-  display: flex;
+  display: none;
   margin: 0;
   height: 2px;
   background-color: #eeeeee;
   border: 0;
-  display: none;
   width: 80%;
 
   @include mixins.mediaQuery(tablet) {
