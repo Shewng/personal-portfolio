@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Synopsis from "./Synopsis";
 import styles from "../styles/components/Layout.module.scss";
+import { Fade } from "react-reveal";
 
 const Layout = ({ children }) => {
   const router = useRouter(); //get the current route/path from /pages
@@ -15,12 +16,15 @@ const Layout = ({ children }) => {
           {/**only display synopsis if we are on home*/}
           {router.asPath === "/" ? (
             <>
-              <hr className={styles["synopsis-line"]} /> <Synopsis />
+              <Fade duration={100}>
+                <Synopsis />
+              </Fade>
             </>
           ) : (
             ""
           )}
         </div>
+
         <div className={styles["content-container"]}>{children}</div>
       </div>
 

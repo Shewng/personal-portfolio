@@ -2,10 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/pages/Home.module.scss";
 import gif from "../public/nightcity.gif";
+import { Fade } from "react-reveal";
 
 export default function Home() {
   return (
-    <>
+    <Fade bottom duration={750} distance={"1em"}>
       <Head>
         <title>Shwong</title>
         <meta name="description" content="Homepage for The Shwong" />
@@ -22,6 +23,6 @@ export default function Home() {
           quality={100}
         />
       </div>
-    </>
+    </Fade>
   );
 }
