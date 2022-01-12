@@ -9,19 +9,15 @@ import { projectsList } from "../data";
 
 function Navbar() {
   const [toggler, setToggler] = useState(false);
+
   const router = useRouter();
+
   const list = projectsList.map((project) => {
     return project.route;
   });
-  console.log(list);
 
   const toggleNavbar = () => setToggler((prev) => !prev); //toggle state for hamburger menu
-  const closeNavbar = () => setToggler((prev) => (prev = false));
-
-  useEffect(() => {
-    if (router.asPath === "/" || "/about" || "/contact" ? styles.off : "") {
-    }
-  }, [router.asPath]);
+  const closeNavbar = () => setToggler((prev) => (prev = false)); //clicking links in the nav (e.g. home)
 
   return (
     <nav className={styles.navbar}>
