@@ -1,7 +1,8 @@
 export const projectsList = [
   {
+    id: 1,
     name: "NailStyle",
-    route: "/projects/nailstyle",
+    route: "nailstyle",
     previewImg: "/../public/test.png",
     description:
       "Nail Salon website application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
@@ -26,14 +27,14 @@ export const projectsList = [
     images: [
       "/../public/nailstyle/nailstyle1.png",
       "/../public/nailstyle/nailstyle2.png",
-      "/../public/nailstyle/nailstyle3.png",
     ],
     github: "https://github.com/Shewng/NailStyle",
     external: "https://hxnails.ca",
   },
   {
+    id: 2,
     name: "MENJI.",
-    route: "/projects/menji",
+    route: "menji",
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Database Management course, mimicking an online eCommerce clothing store. Features a simple RESTful API implementation. Clients can log into their account, browse products, add/remove them from their cart, checkout with personal information and review their orders.",
@@ -53,17 +54,14 @@ export const projectsList = [
       "MongoDB",
       "Mongoose",
     ],
-    images: [
-      "/../public/menji/menji1.png",
-      "/../public/menji/menji2.png",
-      "/../public/menji/menji3.png",
-    ],
+    images: ["/../public/menji/menji1.png", "/../public/menji/menji2.png"],
     github: "https://github.com/Shewng/Menji",
     external: "",
   },
   {
+    id: 3,
     name: "Personal Portfolio",
-    route: "/projects/portfolio",
+    route: "portfolio",
     previewImg: "/../public/nightcity.gif",
     description:
       "My first website iteration, created through Next js and SCSS. My design inspiration was through a combination of minimalism and an avant-garde edge. I hope to create a modular/scalable version in the future, allowing me to fully transform the site into an autobiography of myself.",
@@ -72,16 +70,16 @@ export const projectsList = [
     year: "2021",
     technologies: ["HTML", "SASS", "JavaScript", "React", "Next.js", "Vercel"],
     images: [
-      "/../public/nightcity.gif",
-      "/../public/nightcity.gif",
-      "/../public/nightcity.gif",
+      "/../public/portfolio/portfolio1.png",
+      "/../public/portfolio/portfolio2.png",
     ],
     github: "https://github.com/Shewng/personal-portfolio",
     external: "https://shwong.me",
   },
   {
+    id: 4,
     name: "MakeApp",
-    route: "/projects/makeapp",
+    route: "makeapp",
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my iOS development course, mimicking a social media application based on creating makeupp routines. Built on SwiftUI using Firebase’s Cloud Firestore to manage backend infrastructure.",
@@ -89,13 +87,17 @@ export const projectsList = [
     type: "University",
     year: "2020",
     technologies: ["Swift", "Firebase"],
-    images: ["", "", ""],
+    images: [
+      "/../public/smartspace/smartspace1.png",
+      "/../public/smartspace/smartspace2.png",
+    ],
     github: "https://github.com/Shewng/makeup",
     external: "",
   },
   {
+    id: 5,
     name: "Plants Vs Zombies Clone",
-    route: "/projects/pvz",
+    route: "pvz",
     previewImg: "/../public/nightcity.gif",
     description:
       "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java’s class structure to create the plants and zombies. With JavaFX’s Scene Builder, I was able to program a game engine that tracked certain states, swaping between different displays when necessary.",
@@ -103,13 +105,17 @@ export const projectsList = [
     type: "University",
     year: "2018",
     technologies: ["Java", "JavaFX"],
-    images: ["", "", ""],
+    images: [
+      "/../public/smartspace/smartspace1.png",
+      "/../public/smartspace/smartspace2.png",
+    ],
     github: "https://github.com/Shewng/pvz-ms-remake",
     external: "",
   },
   {
+    id: 6,
     name: "Laser Unlock",
-    route: "/projects/laserunlock",
+    route: "laserunlock",
     previewImg: "/../public/nightcity.gif",
     description:
       "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio’s sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.",
@@ -120,7 +126,6 @@ export const projectsList = [
     images: [
       "/../public/smartspace/smartspace1.png",
       "/../public/smartspace/smartspace2.png",
-      "/../public/smartspace/smartspace3.png",
     ],
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
@@ -140,8 +145,9 @@ export const projectsList = [
     external: "",
   },*/
   {
+    id: 7,
     name: "SmartSpace",
-    route: "/projects/smartspace",
+    route: "smartspace",
     previewImg: "/../public/nightcity.gif",
     description: "",
     longDescription: "",
@@ -151,13 +157,13 @@ export const projectsList = [
     images: [
       "/../public/smartspace/smartspace1.png",
       "/../public/smartspace/smartspace2.png",
-      "/../public/smartspace/smartspace3.png",
     ],
     github: "",
     external:
       "https://xd.adobe.com/view/367c853f-9e22-4e1e-6688-2350bbd28618-404d/?fullscreen&hints=off",
   },
   {
+    id: 8,
     name: "ChaiSweetBakery",
     route: "/projects/chaisweetbakery",
     previewImg: "/../public/nightcity.gif",
@@ -175,7 +181,10 @@ export const projectsList = [
       "Next.js",
       "Vercel",
     ],
-    images: ["", "", ""],
+    images: [
+      "/../public/smartspace/smartspace1.png",
+      "/../public/smartspace/smartspace2.png",
+    ],
     github: "https://github.com/Shewng/ChaiSweetBakery",
     external: "",
   },
