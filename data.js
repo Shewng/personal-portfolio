@@ -39,9 +39,9 @@ export const projectsList = [
     description:
       "Final project for my Database Management course, mimicking an online eCommerce clothing store. Features a simple RESTful API implementation. Clients can log into their account, browse products, add/remove them from their cart, checkout with personal information and review their orders.",
     longDescription:
-      "Partnered final project for my Database Management course, mimicking an online eCommerce clothing store. We were tasked with creating a problem and design process, building the entire project through a near full-stack implementation." +
-      "\n\nMenji. utilizes a simple REST implementation alongside MongoDB’s NoSQL database to add, remove and load the products and registered users. HTTP web cookies are used for the login/register process of customers and admins. We were tasked to include a step-by-step procedure of the project, with an emphasis on mapping how our data flowed through numerous interactions. This was achieved by creating relationship model diagrams and documenting API endpoints via the Postman API platform." +
-      "\n\nUsers can browse the merchandise, add/remove them from their cart, checkout the cart with their personal information and review their orders. Admins can view all registered customers, manage the store’s inventory and track orders placed by customers.",
+      `Partnered final project for my Database Management course, mimicking an online eCommerce clothing store. We were tasked with creating a problem and design process, building the entire project through a near full-stack implementation.` +
+      `\n\nMENJI. utilizes a simple REST implementation alongside MongoDB\’s NoSQL database to add, remove and load the products and registered users. HTTP web cookies are used for the login/register process of customers and admins. We were tasked to include a step-by-step procedure of the project, with an emphasis on mapping how our data flowed through numerous interactions. This was achieved by creating relationship model diagrams and documenting API endpoints via the Postman API platform.` +
+      `\n\nUsers can browse the merchandise, add/remove them from their cart, checkout the cart with their personal information and review their orders. Admins can view all registered customers, manage the store\’s inventory and track orders placed by customers.`,
     type: "University",
     year: "2021",
     technologies: [

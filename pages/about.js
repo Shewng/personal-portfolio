@@ -53,13 +53,13 @@ const About = () => {
   ));
 
   return (
-    <Fade bottom duration={750} distance={"1em"}>
+    <Fade bottom duration={500} distance={"1em"}>
       <div className={styles["about-container"]}>
         <div className={styles["about-row-container"]}>
           <div className={styles["about-me-container"]}>
             <h3>about me</h3>
             <p>
-              Hello, my name is <span>Samuel</span> and I’m a graduated student
+              Hello, my name is <span>Samuel</span> and I'm a graduated student
               from the University of Calgary with a BSc degree in Computer
               Science. My interests currently lie in web design and Full Stack
               development. I aspire towards a career which allows me to unlock
@@ -67,16 +67,16 @@ const About = () => {
               work and helping people through their problems.
               <br />
               <br />
-              I’ve been developing myself as a person outside of my career,
+              I've been developing myself as a person outside of my career,
               using a quote as motivation: the more you learn, the easier it is
               to learn more. Introducing new technologies into my work has not
               only made me better developer, but also driven my passions in this
               field even further.
               <br />
               <br />
-              Outside of coding, when I'm in the mood for self-development, I'll
-              be at the gym, exploring fashion or working on my podcast. If I'm
-              burned out, gaming helps me forget about adulting.
+              Outside of coding, when I\'m in the mood for self-development,
+              I'll be at the gym, exploring fashion or working on my podcast. If
+              I'm burned out, gaming helps me forget about adulting.
             </p>
           </div>
 
