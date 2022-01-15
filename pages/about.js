@@ -59,24 +59,25 @@ const About = () => {
           <div className={styles["about-me-container"]}>
             <h3>about me</h3>
             <p>
-              Hello, my name is <span>Samuel</span> and I'm a graduated student
-              from the University of Calgary with a BSc degree in Computer
-              Science. My interests currently lie in web design and Full Stack
-              development. I aspire towards a career which allows me to unlock
-              my full creative potential, sparking joy to the end users of my
-              work and helping people through their problems.
+              Hello, my name is <span>Samuel</span> and I&#39;m a graduated
+              student from the University of Calgary with a BSc degree in
+              Computer Science. My interests currently lie in web design and
+              Full Stack development. I aspire towards a career which allows me
+              to unlock my full creative potential, sparking joy to the end
+              users of my work and helping people through their problems.
               <br />
               <br />
-              I've been developing myself as a person outside of my career,
+              I&#39;ve been developing myself as a person outside of my career,
               using a quote as motivation: the more you learn, the easier it is
               to learn more. Introducing new technologies into my work has not
               only made me better developer, but also driven my passions in this
               field even further.
               <br />
               <br />
-              Outside of coding, when I\'m in the mood for self-development,
-              I'll be at the gym, exploring fashion or working on my podcast. If
-              I'm burned out, gaming helps me forget about adulting.
+              Outside of coding, if I&#39;m in the mood for self-development
+              I&#39;ll be at the gym, exploring fashion or working on my
+              (hopefully soon) podcast. If I&#39;m burned out, gaming helps me
+              forget about adulting.
             </p>
           </div>
 
