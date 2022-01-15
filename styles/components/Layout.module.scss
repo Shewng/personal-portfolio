@@ -38,17 +38,8 @@
 
   @include mixins.mediaQuery(tablet) {
     width: 25%;
+    border-bottom: none;
   }
-}
-
-.navbar-container.show {
-  opacity: 1;
-  transition: opacity 0.25s ease;
-}
-
-.navbar-container.hidden {
-  opacity: 0;
-  transition: opacity 0.25s ease;
 }
 
 .content-container {

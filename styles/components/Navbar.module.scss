@@ -7,19 +7,15 @@
   align-items: center;
   padding: 0 1.25em;
 
+  a:hover {
+    color: var.$primary-red;
+  }
+
   @include mixins.mediaQuery(tablet) {
     flex-direction: column;
     align-items: flex-start;
     padding: 2em 2.25em;
   }
-}
-
-.navbar.hidden {
-  background-color: black;
-}
-
-.navbar.show {
-  background-color: aquamarine;
 }
 
 .top-nav {
@@ -57,7 +53,7 @@
   max-height: 0px;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.05s ease, opacity 0.05s ease, max-height 0.1s ease;
+  transition: visibility 0s ease, opacity 0s ease, max-height 0.1s ease;
 
   a {
     padding: 0.75em 0;

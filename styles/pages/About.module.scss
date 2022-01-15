@@ -49,6 +49,10 @@
   max-width: 425px;
   margin-bottom: 2.75em;
 
+  span {
+    border: 1px solid #cccccc !important;
+  }
+
   @include mixins.mediaQuery(laptop) {
     margin-left: 1.5em;
   }
