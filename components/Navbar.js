@@ -82,10 +82,12 @@ function Navbar() {
           <hr className={styles.line1} />
           <ul>
             {projectsList.map((project) => (
-              <Link href={project.route}>
+              <Link href={"/projects/" + project.id} key={project.id}>
                 <a
                   className={
-                    router.asPath === project.route ? styles.active : ""
+                    router.asPath === "/projects/" + project.id
+                      ? styles.active
+                      : ""
                   }
                   onClick={() => closeNavbar()}
                 >

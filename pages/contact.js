@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 const Contact = () => {
   return (
-    <Fade bottom duration={750} distance={"1em"}>
+    <Fade bottom duration={500} distance={"1em"}>
       <div className={styles["contact-container"]}>
         <h3>contact</h3>
         <p className={styles.message}>

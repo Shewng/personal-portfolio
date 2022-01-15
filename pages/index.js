@@ -6,7 +6,7 @@ import { Fade } from "react-reveal";
 
 export default function Home() {
   return (
-    <Fade bottom duration={750} distance={"1em"}>
+    <Fade bottom duration={500} distance={"1em"}>
       <Head>
         <title>Shwong</title>
         <meta name="description" content="Homepage for The Shwong" />

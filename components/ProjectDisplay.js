@@ -15,12 +15,11 @@ function ProjectDisplay(props) {
     github,
     external,
   } = props;
-  console.log("tech2: " + technologies);
 
   const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
   return (
-    <Fade bottom duration={750} distance={"1em"}>
+    <Fade bottom duration={500} distance={"1em"}>
       <div className={styles["project-page-container"]}>
         <div className={styles["description-container"]}>
           <h3>{name}</h3>
@@ -60,27 +59,26 @@ function ProjectDisplay(props) {
               </li>
             </ul>
           </div>
-        </div>
-        <div className={styles["picture-container"]}>
-          <div className={styles["image-container"]}>
-            <Image
-              src={images[0]}
-              alt="Project Image"
-              width={1}
-              height={1}
-              layout="fill"
-            />
-          </div>
-          <div className={styles["image-container"]}>
-            <Image
-              src={images[1]}
-              alt="Project Image"
-              width={1}
-              height={1}
-              layout="fill"
-            />
-          </div>
-          <div className={styles["image-container"]}>
+          <div className={styles["picture-container"]}>
+            <div className={styles["image-container"]}>
+              <Image
+                src={images[0]}
+                alt="Project Image"
+                width={500}
+                height={400}
+                layout="responsive"
+              />
+            </div>
+            <div className={styles["image-container"]}>
+              <Image
+                src={images[1]}
+                alt="Project Image"
+                width={500}
+                height={400}
+                layout="responsive"
+              />
+            </div>
+            {/* <div className={styles["image-container"]}>
             <Image
               src={images[2]}
               alt="Project Image"
@@ -88,6 +86,7 @@ function ProjectDisplay(props) {
               height={1}
               layout="fill"
             />
+          </div> */}
           </div>
         </div>
       </div>
