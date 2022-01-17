@@ -1,5 +1,9 @@
 @use "../variables" as var;
 
+.contact-container {
+  padding: 0 0.75em;
+}
+
 .message {
   font-family: var.$duru;
   font-size: 0.85em;

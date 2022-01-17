@@ -1,10 +1,11 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { Router, useRouter } from "next/router";
+import { useState } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
 import { BsList } from "react-icons/bs";
 import { projectsList } from "../data";
+import Synopsis from "./Synopsis";
 //import pdf from "../public/resume.pdf";
 
 function Navbar() {
@@ -29,9 +30,11 @@ function Navbar() {
             </a>
           </Link>
         </div>
-        <div className={styles["nav-dropdown"]} onClick={() => toggleNavbar()}>
-          <BsList size={30} />
-        </div>
+        <BsList
+          size={25}
+          className={styles["nav-dropdown"]}
+          onClick={() => toggleNavbar()}
+        />
       </div>
 
       <div
@@ -112,8 +115,8 @@ function Navbar() {
             resume
           </a>
         </Link>
+        <hr className={styles["synopsis-line"]} />
       </div>
-      <hr className={styles["synopsis-line"]} />
     </nav>
   );
 }
