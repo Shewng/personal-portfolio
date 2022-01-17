@@ -3,13 +3,13 @@ export const projectsList = [
     id: 1,
     name: "NailStyle",
     route: "nailstyle",
-    previewImg: "/../public/test.png",
+    previewImg: "/../public/nailstyle/nailstyle.png",
     description:
-      "Nail Salon website application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
+      "Nail Salon website app built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
     longDescription:
-      `Nail Salon website application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and further flesh out full stack skillset.` +
-      `\n\nI worked with a friend to revamp a local business's nail salon website given a list of user requirements, issues to resolve and optimizations to add. We used Figma to build from the ground up, designing prototypes and wireframes to move forward iteratively. The intention was to develop good UX/UI habits to understand our problems from the client's POV,  ensuring a smooth implementation` +
-      `\n\nNailStyle has an admin terminal for the management of customers, employees and appointments, as well as a page for customers to book appointments. The app features RESTful API architecture, JSON Web Token authentication (for admins) and responsive design for desktop and mobile devices.`,
+      "Single-Page Application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and further flesh out full stack skillset. The website back-end and front-end are hosted through Heroku and Netlify respectively." +
+      "\n\nNailStyle was created as a template for a nail salon website that small businesses could adopt. It features an admin terminal for the management of customers, employees and appointments, as well as a page for customers to book appointments. All data is stored in the MongoDB database and fetched using our REST API calls. We also included some authentication using JSON Web Tokens, but only for administrators. Finally, the app is fully responsive on both desktop and mobile devices." +
+      "\n\nI worked with a friend to revamp a local business's nail salon website given a list of user requirements, issues to resolve and optimizations to add. The biggest issue we noticed in these types of businesses was the lack of clarity and a cohesive theme. Salon services help people feel beautiful and comfortable in their appearances, and their website should radiate the same feeling of elegance. That being said, our intention with NailStyle was to stick to a simple structure/template that could then be personalized to suit a business's desires. Therefore, the current design is as minimalistic as we would ever see it.",
     type: "Personal",
     year: "2021",
     technologies: [
@@ -35,22 +35,22 @@ export const projectsList = [
     id: 2,
     name: "MENJI.",
     route: "menji",
-    previewImg: "/../public/nightcity.gif",
+    previewImg: "/../public/menji/menji.png",
     description:
       "Final project for my Database Management course, mimicking an online eCommerce clothing store. Features a simple RESTful API implementation. Clients can log into their account, browse products, add/remove them from their cart, checkout with personal information and review their orders.",
     longDescription:
-      `Partnered final project for my Database Management course, mimicking an online eCommerce clothing store. We were tasked with creating a problem and design process, building the entire project through a near full-stack implementation.` +
-      `\n\nMENJI. utilizes a simple REST implementation alongside MongoDB's NoSQL database to add, remove and load the products and registered users. HTTP web cookies are used for the login/register process of customers and admins. We were tasked to include a step-by-step procedure of the project, with an emphasis on mapping how our data flowed through numerous interactions. This was achieved by creating relationship model diagrams and documenting API endpoints via the Postman API platform.` +
-      `\n\nUsers can browse the merchandise, add/remove them from their cart, checkout the cart with their personal information and review their orders. Admins can view all registered customers, manage the store's inventory and track orders placed by customers.`,
+      "Partnered final project for my Database Management course. A web app that mimics an online eCommerce clothing store, letting users browse and purchase items. We were tasked with creating a problem and design process, building the entire project through a near full-stack implementation." +
+      "\n\nMENJI. uses simple REST API calls to add, remove and load products from the MongoDB database. We were encouraged to use Mongoose to help model some of our objects using schemas. This helped immensely with the learning process of the differences between front-end and back-end. HTTP web cookies are used for the login/register process of both customers and admins. Admins can view all registered customers, manage the store's inventory and track orders placed by customers." +
+      "\n\nThis project was my first exposure to the idea of full stack. With our specified deadlines, learning the concepts from scratch and coding everything ground-up was difficult. Looking back only less than a year ago, I think my skills in design and development have greatly improved ever since.",
     type: "University",
     year: "2021",
     technologies: [
       "HTML",
       "CSS",
       "JavaScript",
+      "Bootstrap",
       "Node.js",
       "Express",
-      "Axios",
       "MongoDB",
       "Mongoose",
     ],
@@ -62,12 +62,16 @@ export const projectsList = [
     id: 3,
     name: "Personal Portfolio",
     route: "portfolio",
-    previewImg: "/../public/nightcity.gif",
-    description: `My first website iteration, created through Next js and SCSS. My design inspiration was through a combination of minimalism and an avant-garde edge. I hope to create a modular/scalable version in the future, allowing me to fully transform the site into an autobiography of myself.`,
-    longDescription: "",
+    previewImg: "/../public/portfolio/portfolio.png",
+    description:
+      "First website iteration to showcase my work, developed in React, Next.js and SCSS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations.",
+    longDescription:
+      "First website iteration to showcase my work, developed in React, Next.js and SCSS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations." +
+      "\n\nOne of my main objectives of the site was visual hierarchy and understanding proportions on the page. Making sure there is an intention for a component to be lighter in tone or having a specific margin to draw attention toward it. If there's one thing I learned, it's that there are many many options that look great which can overwhelm you quite fast. However, it is important to stick to your theme and finish what you started in order to not second-guess yourself and stay productive." +
+      "\n\nI hope to create a modular/scalabe version that lets me add in different elements and features easily. It would have parts of a blog, parts of a portfolio, parts of a dashboard-esq style, many many parts! My end goal of it all would be a website that feels like an autobiography/log of my life, thoughts and work.",
     type: "Personal",
     year: "2021",
-    technologies: ["HTML", "SASS", "JavaScript", "React", "Next.js", "Vercel"],
+    technologies: ["HTML", "SCSS", "JavaScript", "React", "Next.js", "Vercel"],
     images: [
       "/../public/portfolio/portfolio1.png",
       "/../public/portfolio/portfolio2.png",
@@ -79,9 +83,13 @@ export const projectsList = [
     id: 4,
     name: "MakeApp",
     route: "makeapp",
-    previewImg: "/../public/nightcity.gif",
-    description: `Final project for my iOS development course, mimicking a social media application based on creating makeupp routines. Built on SwiftUI using Firebase's Cloud Firestore to manage backend infrastructure.`,
-    longDescription: "",
+    previewImg: "/../public/makeapp/makeapp.png",
+    description:
+      "Final project for my iOS development course that mimics a social media application based on creating makeupp routines. Built on SwiftUI using Firebase's Cloud Firestore to manage backend infrastructure.",
+    longDescription:
+      "Final project for my iOS development course that mimics a social media application based on creating makeupp routines. Built on SwiftUI using Firebase's Cloud Firestore to manage backend infrastructure." +
+      "\n\nMakeApp features a media feed where you can browse makeup inspiration through various styles/tags. Users can find new makeup routines from their favourite artists, or create their own routines to share with others. For our project, we used SwiftUI for the creation of routines which would be shared to the general feed, managed by Firebase." +
+      "\n\nThe project had both development and business aspects to teach us how to market our own apps. From our prototypes, we had to narrow down our functionality to the core reasons of using MakeApp, which was the aspect of sharing and showcasing makeup routines. Advertising the usefulness of a new social media app and being able to develop something that matches it was a difficult but important learning process.",
     type: "University",
     year: "2020",
     technologies: ["Swift", "Firebase"],
@@ -96,9 +104,10 @@ export const projectsList = [
     id: 5,
     name: "Plants Vs Zombies Clone",
     route: "pvz",
-    previewImg: "/../public/nightcity.gif",
-    description: `Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies. With JavaFX's Scene Builder, I was able to program a game engine that tracked certain states, swaping between different displays when necessary.`,
-    longDescription: ``,
+    previewImg: "/../public/pvz/pvz.png",
+    description:
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies. With JavaFX's Scene Builder, I was able to program a game engine that tracked certain states, swaping between different displays when necessary.",
+    longDescription: "",
     type: "University",
     year: "2018",
     technologies: ["Java", "JavaFX"],
@@ -113,9 +122,10 @@ export const projectsList = [
     id: 6,
     name: "Laser Unlock",
     route: "laserunlock",
-    previewImg: "/../public/nightcity.gif",
-    description: `Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.`,
-    longDescription: ``,
+    previewImg: "/../public/laserunlock/laserunlock.png",
+    description:
+      "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.",
+    longDescription: "" + "" + "",
     type: "University",
     year: "2020",
     technologies: ["Java", "Android Studio"],
@@ -144,9 +154,10 @@ export const projectsList = [
     id: 7,
     name: "SmartSpace",
     route: "smartspace",
-    previewImg: "/../public/nightcity.gif",
-    description: ``,
-    longDescription: ``,
+    previewImg: "/../public/smartspace/smartspace.png",
+    description:
+      "Semester-long group project focused on UX/UI design. SmartSpace assisted those that integrated many smart devices into their home and needed a device manager API to handle them all. The project was done entirely in Adobe XD to emphasize taking a user-orientated approach to our problems.",
+    longDescription: "" + "" + "",
     type: "University",
     year: "2019",
     technologies: ["Adobe XD"],
@@ -156,24 +167,28 @@ export const projectsList = [
     ],
     github: "",
     external:
-      "https://xd.adobe.com/view/367c853f-9e22-4e1e-6688-2350bbd28618-404d/?fullscreen&hints=off",
+      "https://xd.adobe.com/view/2fe35e91-1dad-4313-a6f2-f9b2db807940-7ab0/?fullscreen",
   },
   {
     id: 8,
-    name: "ChaiSweetBakery",
-    route: "/projects/chaisweetbakery",
-    previewImg: "/../public/nightcity.gif",
-    description: `Work-in-progress website built on React for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations.  Informed by suggestions and user feedback, I designed and developed the site with the intention of a lighthearted, jovial (comforting, playful, spirited) aesthetic.`,
-    longDescription: ``,
+    name: "ChaiSweets",
+    route: "/projects/chaisweet",
+    previewImg: "/../public/chaisweets/chaisweets.png",
+    description:
+      "Work-in-progress website built on React, Nextjs and SCSS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
+    longDescription:
+      "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer requests and payments." +
+      "\n\nInfluenced by contemporary architecture and ornamental stone, ChaiSweets boasts a modernistic style with a hint of edginess. The color pallete is quite monochrome with some color signatures of sage green, gold and a natural wood brown. These color contrasts are balanced by a clean and simple layout to finalize the design." +
+      "\n\nI plan to continue strengthening my fundamentals of React with this project. There are certain libraries I want to try out such as React-Hook-Form for customer requests and Styled Components for CSS. This website will not only reinforce my front-end development skills but also help push my sister's business forward into a more officially established state.",
     type: "Personal",
-    year: "2021",
+    year: "2022",
     technologies: [
       "HTML",
       "SCSS",
       "JavaScript",
       "React",
-      "Docker",
       "Next.js",
+      "Styled Components",
       "Vercel",
     ],
     images: [
