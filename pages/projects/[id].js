@@ -25,7 +25,7 @@ function Display({ project }) {
   return (
     <>
       <Head>
-        <title> {project.name} | The Shwong</title>
+        <title> {project.name} | Shwong</title>
         <meta name="description" content="Homepage for The Shwong" />
         <meta name="keywords" content="shwong" />
         <link rel="icon" href="/../favicon.ico" />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/pages/Home.module.scss";
 import gif from "../public/nightcity.gif";
 import { Fade } from "react-reveal";
+import Synopsis from "../components/Synopsis";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
         <meta name="keywords" content="shwong" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className="showDesktop">
+        <Synopsis />
+      </div>
       <div className={styles["image-container"]}>
         <Image
           src={gif}

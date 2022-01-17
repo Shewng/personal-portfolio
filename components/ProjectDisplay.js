@@ -15,7 +15,19 @@ function ProjectDisplay(props) {
     github,
     external,
   } = props;
-
+  const listImgs = images.map((img) => (
+    <div className={styles["image-container"]}>
+      {img !== "" ? (
+        <Image
+          src={img}
+          alt="Project Image"
+          width={100}
+          height={75}
+          layout="responsive"
+        />
+      ) : null}
+    </div>
+  ));
   const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
   return (
@@ -60,24 +72,18 @@ function ProjectDisplay(props) {
             </ul>
           </div>
           <div className={styles["picture-container"]}>
-            <div className={styles["image-container"]}>
-              <Image
-                src={images[0]}
-                alt="Project Image"
-                width={500}
-                height={400}
-                layout="responsive"
-              />
-            </div>
-            <div className={styles["image-container"]}>
-              <Image
-                src={images[1]}
-                alt="Project Image"
-                width={500}
-                height={400}
-                layout="responsive"
-              />
-            </div>
+            {listImgs}
+            {/* <div className={styles["image-container"]}>
+              {images[0] !== "" ? (
+                <Image
+                  src={images[1]}
+                  alt="Project Image"
+                  width={475}
+                  height={400}
+                  layout="responsive"
+                />
+              ) : null}
+            </div> */}
             {/* <div className={styles["image-container"]}>
             <Image
               src={images[2]}

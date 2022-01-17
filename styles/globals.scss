@@ -48,3 +48,17 @@ h4 {
   letter-spacing: 1px;
   margin: 0.75em 0;
 }
+
+.showMobile {
+  display: none;
+  @include mixins.mediaQuery(tablet) {
+    display: initial;
+  }
+}
+
+.showDesktop {
+  display: initial;
+  @include mixins.mediaQuery(tablet) {
+    display: none;
+  }
+}

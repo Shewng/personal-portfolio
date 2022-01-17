@@ -18,7 +18,6 @@
 
   @include mixins.mediaQuery(laptop) {
     //width: 55%;
-    margin-right: 2em;
     margin-bottom: 0;
   }
 }
@@ -109,17 +108,18 @@
   width: 100%;
 
   @include mixins.mediaQuery(laptop) {
+    //decide whether i want this or not.
     padding: 0;
     //width: 45%;
   }
 }
 
 .image-container {
-  position: relative;
+  // decide whether to include this or not. makes the images bigger or smaller
   width: 100%;
   height: auto;
   min-height: 300px;
-  margin-bottom: 1.5em;
+  padding: 1em 0;
 
   //might not include
   filter: grayscale(1);
