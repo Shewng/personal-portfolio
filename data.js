@@ -3,7 +3,7 @@ export const projectsList = [
     id: 1,
     name: "NailStyle",
     route: "nailstyle",
-    previewImg: "/../public/nailstyle/nailstyle.png",
+    previewImg: "/nailstyle/nailstyle.png",
     description:
       "Nail Salon website app built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and flesh out full stack skillset. Features a simple RESTful API implementation. The app has a terminal for admins to manage customers, employees and appointments, as well as an appointment page for customers.",
     longDescription:
@@ -24,10 +24,7 @@ export const projectsList = [
       "Heroku",
       "Netlify",
     ],
-    images: [
-      "/../public/nailstyle/nailstyle1.png",
-      "/../public/nailstyle/nailstyle2.png",
-    ],
+    images: ["/nailstyle/nailstyle1.png", "/nailstyle/nailstyle2.png"],
     github: "https://github.com/Shewng/NailStyle",
     external: "https://hxnails.ca",
   },
@@ -35,7 +32,7 @@ export const projectsList = [
     id: 2,
     name: "MENJI.",
     route: "menji",
-    previewImg: "/../public/menji/menji.png",
+    previewImg: "/menji/menji.png",
     description:
       "Final project for my Database Management course, mimicking an online eCommerce clothing store. Features a simple RESTful API implementation. Clients can log into their account, browse products, add/remove them from their cart, checkout with personal information and review their orders.",
     longDescription:
@@ -54,7 +51,7 @@ export const projectsList = [
       "MongoDB",
       "Mongoose",
     ],
-    images: ["/../public/menji/menji1.png", "/../public/menji/menji2.png"],
+    images: ["/menji/menji1.png", "/menji/menji2.png"],
     github: "https://github.com/Shewng/Menji",
     external: "",
   },
@@ -62,7 +59,7 @@ export const projectsList = [
     id: 3,
     name: "Personal Portfolio",
     route: "portfolio",
-    previewImg: "/../public/portfolio/portfolio.png",
+    previewImg: "/portfolio/portfolio.png",
     description:
       "First website iteration to showcase my work, developed in React, Next.js and SCSS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations.",
     longDescription:
@@ -72,10 +69,7 @@ export const projectsList = [
     type: "Personal",
     year: "2021",
     technologies: ["HTML", "SCSS", "JavaScript", "React", "Next.js", "Vercel"],
-    images: [
-      "/../public/portfolio/portfolio1.png",
-      "/../public/portfolio/portfolio2.png",
-    ],
+    images: ["/portfolio/portfolio1.png", "/portfolio/portfolio2.png"],
     github: "https://github.com/Shewng/personal-portfolio",
     external: "https://shwong.me",
   },
@@ -83,7 +77,7 @@ export const projectsList = [
     id: 4,
     name: "MakeApp",
     route: "makeapp",
-    previewImg: "/../public/makeapp/makeapp.png",
+    previewImg: "/makeapp/makeapp.png",
     description:
       "Final project for my iOS development course that mimics a social media application based on creating makeupp routines. Built on SwiftUI using Firebase's Cloud Firestore to manage backend infrastructure.",
     longDescription:
@@ -93,10 +87,7 @@ export const projectsList = [
     type: "University",
     year: "2020",
     technologies: ["Swift", "Firebase"],
-    images: [
-      "/../public/smartspace/smartspace1.png",
-      "/../public/smartspace/smartspace2.png",
-    ],
+    images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     github: "https://github.com/Shewng/makeup",
     external: "",
   },
@@ -104,17 +95,16 @@ export const projectsList = [
     id: 5,
     name: "Plants Vs Zombies Clone",
     route: "pvz",
-    previewImg: "/../public/pvz/pvz.png",
+    previewImg: "/pvz/pvz.png",
     description:
-      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies. With JavaFX's Scene Builder, I was able to program a game engine that tracked certain states, swaping between different displays when necessary.",
-    longDescription: "",
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies.",
+    longDescription:
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies." +
+      "\n\nFor our year-long project, our group came up with the idea to recreate the iconic Plants Vs Zombies game. The entirety of the game was well beyond our reach, but we decided to stick to some core elements: left-right game progress, a grid placement for defense, the shovel to remove plants, natural falling sun generation and lawnmowers as a second-life. Unfortunately, we couldn't add in the sunflower unit for sun generation but made up for it by using a kill-reward system.",
     type: "University",
     year: "2018",
     technologies: ["Java", "JavaFX"],
-    images: [
-      "/../public/smartspace/smartspace1.png",
-      "/../public/smartspace/smartspace2.png",
-    ],
+    images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     github: "https://github.com/Shewng/pvz-ms-remake",
     external: "",
   },
@@ -122,17 +112,16 @@ export const projectsList = [
     id: 6,
     name: "Laser Unlock",
     route: "laserunlock",
-    previewImg: "/../public/laserunlock/laserunlock.png",
+    previewImg: "/laserunlock/laserunlock.png",
     description:
       "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.",
-    longDescription: "" + "" + "",
+    longDescription:
+      "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions." +
+      "\n\nLaser Unlock was developed in Android Studio which was my first experience in mobile development. Specifically, we had to dive into their sensor framework which utilizes smartphone sensors such as pressure, proximity, orientation and lumination to monitor/provide changes. My app detects when the user covers the light sensor, which translates to the cat swiping at the laser. Essentially, the user should feel like the cat trying to catch the laser themselves as it randomly moves across the screen.",
     type: "University",
     year: "2020",
     technologies: ["Java", "Android Studio"],
-    images: [
-      "/../public/smartspace/smartspace1.png",
-      "/../public/smartspace/smartspace2.png",
-    ],
+    images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
   },
@@ -154,17 +143,16 @@ export const projectsList = [
     id: 7,
     name: "SmartSpace",
     route: "smartspace",
-    previewImg: "/../public/smartspace/smartspace.png",
+    previewImg: "/smartspace/smartspace.png",
     description:
       "Semester-long group project focused on UX/UI design. SmartSpace assisted those that integrated many smart devices into their home and needed a device manager API to handle them all. The project was done entirely in Adobe XD to emphasize taking a user-orientated approach to our problems.",
-    longDescription: "" + "" + "",
+    longDescription:
+      "Semester-long group project focused on UX/UI design. SmartSpace assisted those that integrated many smart devices into their home and needed a device manager API to handle them all. The project was done entirely in Adobe XD to emphasize taking a user-orientated approach to our problems." +
+      "\n\nThis was my first exposure to design principles and their methods. I learned a large amount of what good design entails and how to approach the process of conjuring both an appealing and usable application. In the end, SmartSpace ignited my passion for UX/UI which now reflects my methodological to approach my projects.",
     type: "University",
     year: "2019",
     technologies: ["Adobe XD"],
-    images: [
-      "/../public/smartspace/smartspace1.png",
-      "/../public/smartspace/smartspace2.png",
-    ],
+    images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     github: "",
     external:
       "https://xd.adobe.com/view/2fe35e91-1dad-4313-a6f2-f9b2db807940-7ab0/?fullscreen",
@@ -173,7 +161,7 @@ export const projectsList = [
     id: 8,
     name: "ChaiSweets",
     route: "/projects/chaisweet",
-    previewImg: "/../public/chaisweets/chaisweets.png",
+    previewImg: "/chaisweets/chaisweets.png",
     description:
       "Work-in-progress website built on React, Nextjs and SCSS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
     longDescription:
@@ -191,10 +179,7 @@ export const projectsList = [
       "Styled Components",
       "Vercel",
     ],
-    images: [
-      "/../public/smartspace/smartspace1.png",
-      "/../public/smartspace/smartspace2.png",
-    ],
+    images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     github: "https://github.com/Shewng/ChaiSweetBakery",
     external: "",
   },
