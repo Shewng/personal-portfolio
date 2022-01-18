@@ -16,8 +16,6 @@ function ProjectCard(props) {
             <Image
               src={previewImg}
               alt="Project Preview Picture"
-              width={450}
-              height={400}
               layout="fill"
               objectFit="cover"
             />

@@ -15,8 +15,8 @@ function ProjectDisplay(props) {
     github,
     external,
   } = props;
-  const listImgs = images.map((img) => (
-    <div className={styles["image-container"]}>
+  const listImgs = images.map((img, i) => (
+    <div className={styles["image-container"]} key={i}>
       {img !== "" ? (
         <Image
           src={img}
