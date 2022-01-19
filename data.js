@@ -61,14 +61,14 @@ export const projectsList = [
     route: "portfolio",
     previewImg: "/portfolio/portfolio.png",
     description:
-      "First website iteration to showcase my work, developed in React, Next.js and SCSS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations.",
+      "First website iteration to showcase my work, developed in React, Next.js and SASS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations.",
     longDescription:
-      "First website iteration to showcase my work, developed in React, Next.js and SCSS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations." +
-      "\n\nOne of my main objectives of the site was visual hierarchy and understanding proportions on the page. Making sure there is an intention for a component to be lighter in tone or having a specific margin to draw attention toward it. If there's one thing I learned, it's that there are many many options that look great which can overwhelm you quite fast. However, it is important to stick to your theme and finish what you started in order to not second-guess yourself and stay productive." +
-      "\n\nI hope to create a modular/scalabe version that lets me add in different elements and features easily. It would have parts of a blog, parts of a portfolio, parts of a dashboard-esq style, many many parts! My end goal of it all would be a website that feels like an autobiography/log of my life, thoughts and work.",
+      "First website iteration to showcase my work, developed in React, Next.js and SASS. My design inspiration was based on a combination of modern aesthetics and minimalism, finished with a monochromatic pallete and a hint of my favourite color - red. The website was deployed using Vercel and uses the React Reveal library for some subtle animations." +
+      "\n\nOne of my main objectives of the site was visual hierarchy and understanding proportions on the page. Making sure there is an intention for a component to be lighter in tone or having a specific margin to draw attention toward it. If there's one thing I learned, it's that there are many many options that look great which can overwhelm you quite fast. However, it is important to stick to your theme and finish what you started in order to not second-guess the quality of work and stay productive. There's always time to develop make another version." +
+      "\n\nI hope to create a modular/scalabe version that lets me add in different elements and features easily. It would have parts of a blog, parts of a portfolio, parts of a dashboard-esq style, many parts that can be personalized. My end goal of it all would be a website that feels like an autobiography/log of my life, thoughts and work.",
     type: "Personal",
     year: "2021",
-    technologies: ["HTML", "SCSS", "JavaScript", "React", "Next.js", "Vercel"],
+    technologies: ["HTML", "SASS", "JavaScript", "React", "Next.js", "Vercel"],
     images: ["/portfolio/portfolio1.png", "/portfolio/portfolio2.png"],
     github: "https://github.com/Shewng/personal-portfolio",
     external: "https://shwong.me",
@@ -82,11 +82,11 @@ export const projectsList = [
       "Final project for my iOS development course that mimics a social media application based on creating makeupp routines. Built on SwiftUI using Firebase's Cloud Firestore to manage backend infrastructure.",
     longDescription:
       "Final project for my iOS development course that mimics a social media application based on creating makeupp routines. Built on SwiftUI using Firebase's Cloud Firestore to manage backend infrastructure." +
-      "\n\nMakeApp features a media feed where you can browse makeup inspiration through various styles/tags. Users can find new makeup routines from their favourite artists, or create their own routines to share with others. For our project, we used SwiftUI for the creation of routines which would be shared to the general feed, managed by Firebase." +
-      "\n\nThe project had both development and business aspects to teach us how to market our own apps. From our prototypes, we had to narrow down our functionality to the core reasons of using MakeApp, which was the aspect of sharing and showcasing makeup routines. Advertising the usefulness of a new social media app and being able to develop something that matches it was a difficult but important learning process.",
+      "\n\nMakeApp features a media feed where you can browse makeup inspiration through various styles and tags. Users can find new makeup routines from their favourite artists or create their own routines to share with others. For our project, we used SwiftUI for the creation of routines which would be shared to the general feed, managed by Firebase." +
+      "\n\nThe project had both development and business aspects to teach us how to market our own apps. From our prototypes, we had to narrow down our functionality to the core reasons of using MakeApp, which was the aspect of sharing and showcasing makeup routines. Advertising this niche towards a new social media app and developing something that matches it was a difficult but important learning process.",
     type: "University",
     year: "2020",
-    technologies: ["Swift", "Firebase"],
+    technologies: ["Swift", "SwiftUI", "Firebase"],
     images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     github: "https://github.com/Shewng/makeup",
     external: "",
@@ -99,7 +99,7 @@ export const projectsList = [
     description:
       "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies.",
     longDescription:
-      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies." +
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants/zombies and JavaFx to control the game engine/UI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies." +
       "\n\nFor our year-long project, our group came up with the idea to recreate the iconic Plants Vs Zombies game. The entirety of the game was well beyond our reach, but we decided to stick to some core elements: left-right game progress, a grid placement for defense, the shovel to remove plants, natural falling sun generation and lawnmowers as a second-life. Unfortunately, we couldn't add in the sunflower unit for sun generation but made up for it by using a kill-reward system.",
     type: "University",
     year: "2018",
@@ -114,14 +114,14 @@ export const projectsList = [
     route: "laserunlock",
     previewImg: "/laserunlock/laserunlock.png",
     description:
-      "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions.",
+      "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created a minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions, which the user would set as their password.",
     longDescription:
-      "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions." +
-      "\n\nLaser Unlock was developed in Android Studio which was my first experience in mobile development. Specifically, we had to dive into their sensor framework which utilizes smartphone sensors such as pressure, proximity, orientation and lumination to monitor/provide changes. My app detects when the user covers the light sensor, which translates to the cat swiping at the laser. Essentially, the user should feel like the cat trying to catch the laser themselves as it randomly moves across the screen.",
+      "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created a minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions, which the user would set as their password." +
+      "\n\nLaser Unlock was developed in Android Studio which was my first experience in mobile development. Specifically, we had to dive into their sensor framework which utilizes smartphone sensors such as pressure, proximity, orientation and lumination to monitor/provide data change. The app detects when the user covers the light sensor, which translates to the cat swiping at the laser. Essentially, the user should feel like the cat trying to catch the laser themselves as it randomly moves across the screen.",
     type: "University",
     year: "2020",
-    technologies: ["Java", "Android Studio"],
-    images: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
+    technologies: ["Android Studio", "Java"],
+    images: ["/laserunlock/test.jpg", "/smartspace/smartspace2.png"],
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
   },
@@ -163,16 +163,16 @@ export const projectsList = [
     route: "/projects/chaisweet",
     previewImg: "/chaisweets/chaisweets.png",
     description:
-      "Work-in-progress website built on React, Nextjs and SCSS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
+      "Work-in-progress website built on React, Nextjs and SASS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
     longDescription:
       "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer requests and payments." +
-      "\n\nInfluenced by contemporary architecture and ornamental stone, ChaiSweets boasts a modernistic style with a hint of edginess. The color pallete is quite monochrome with some color signatures of sage green, gold and a natural wood brown. These color contrasts are balanced by a clean and simple layout to finalize the design." +
-      "\n\nI plan to continue strengthening my fundamentals of React with this project. There are certain libraries I want to try out such as React-Hook-Form for customer requests and Styled Components for CSS. This website will not only reinforce my front-end development skills but also help push my sister's business forward into a more officially established state.",
+      "\n\nChaiSweets boasts a modernistic style with a hint of edginess, influenced by contemporary architecture and ornamental stone. The color pallete is quite monochrome with some color signatures of mint, gunmental blue and a natural wood brown. These color contrasts are balanced by a clean and uncomplicated layout to finalize the design." +
+      "\n\nThere are certain things I want to try out for this project such as React-Hook-Form for customer requests and Styled Components for CSS. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well. Overall, I feel very optimistic about the timeline I have planned and the pace I'm setting for myself.",
     type: "Personal",
     year: "2022",
     technologies: [
       "HTML",
-      "SCSS",
+      "SASS",
       "JavaScript",
       "React",
       "Next.js",
