@@ -77,8 +77,8 @@ const About = () => {
                 through their problems.
                 <br />
                 <br />
-                I&#39;ve been developing myself as a person outside of my
-                career, using a quote as motivation:{" "}
+                I&#39;ve been developing myself as a person inside and outside
+                of my career, using a quote as motivation:{" "}
                 <span className={styles.span2}>
                   The more you learn, the easier it is to learn more.
                 </span>{" "}
@@ -87,16 +87,16 @@ const About = () => {
                 further. With every new project, the development process feels
                 more efficient, things make more sense and my productivity
                 increases. But most importantly, I&#39;m having fun and enjoying
-                the process as the snowball-effect keeps rolling and rolling 😁
+                the process as the snowball-effect keeps rolling and rolling!
                 <br />
                 <br />
                 When I&#39;m in the mood for some self improvement outside of
                 coding, I haphazardly hop between a bunch of my interests.
                 Exploring fashion, looking up graphic design/art inspiration,
                 researching investments and crypto, or working on my (hopefully
-                soon) podcast are just a few things I spend my time on. If
-                I&#39;m burned out, I&#39;ll be at the gym &#34;gettin&#39;
-                those gains&#34; or gaming on my PC (which{" "}
+                soon) podcast are just a couple things I spend my time on. If
+                I&#39;m burned out, I&#39;ll be at the gym getting gains or
+                gaming on my PC (which{" "}
                 <span className={styles.span2}>really</span> helps me forget
                 about adulting).
               </p>
