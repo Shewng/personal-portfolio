@@ -13,7 +13,7 @@ const Contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fade bottom duration={500} distance={"1em"}>
+      <Fade bottom duration={500} distance={"1em"} delay={150}>
         <div className={styles["contact-container"]}>
           <h3>contact</h3>
           <p className={styles.message}>

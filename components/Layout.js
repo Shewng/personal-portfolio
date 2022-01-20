@@ -14,12 +14,9 @@ const Layout = ({ children }) => {
         <div className={styles["navbar-container"]}>
           <Navbar />
           {/**only display synopsis if we are on home*/}
-
-          <Fade duration={100}>
-            <div className="showMobile">
-              <Synopsis />
-            </div>
-          </Fade>
+          <div className="showMobile">
+            <Synopsis />
+          </div>
         </div>
 
         <div className={styles["content-container"]}>{children}</div>

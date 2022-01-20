@@ -14,7 +14,7 @@ const Projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fade bottom duration={500} distance={"1em"}>
+      <Fade bottom duration={500} distance={"1em"} delay={150}>
         <div className={styles["projects-container"]}>
           <h3>projects</h3>
           {projectsList.map((project) => (

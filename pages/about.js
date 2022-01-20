@@ -62,7 +62,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fade bottom duration={500} distance={"1em"}>
+      <Fade bottom duration={500} distance={"1em"} delay={150}>
         <div className={styles["about-container"]}>
           <div className={styles["about-row-container"]}>
             <div className={styles["about-me-container"]}>

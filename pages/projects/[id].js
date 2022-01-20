@@ -1,7 +1,6 @@
 import Head from "next/head";
 import ProjectDisplay from "../../components/ProjectDisplay";
 import { projectsList } from "../../data";
-import { Fade } from "react-reveal";
 
 export const getStaticProps = async ({ params }) => {
   const projects = projectsList.filter((p) => p.id.toString() == params.id);

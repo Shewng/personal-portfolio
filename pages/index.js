@@ -7,7 +7,7 @@ import Synopsis from "../components/Synopsis";
 
 export default function Home() {
   return (
-    <Fade bottom duration={500} distance={"1em"}>
+    <Fade bottom duration={500} distance={"1em"} delay={150}>
       <Head>
         <title>Shwong</title>
         <meta name="description" content="Homepage for The Shwong" />
