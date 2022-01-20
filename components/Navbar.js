@@ -3,13 +3,13 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
-import { BsList } from "react-icons/bs";
+import { BsList, BsX } from "react-icons/bs";
 import { projectsList } from "../data";
 import Synopsis from "./Synopsis";
 //import pdf from "../public/resume.pdf";
 
 function Navbar() {
-  const [toggler, setToggler] = useState(false);
+  const [active, setActive] = useState(false);
 
   const router = useRouter();
 
@@ -17,8 +17,8 @@ function Navbar() {
     return project.route;
   });
 
-  const toggleNavbar = () => setToggler((prev) => !prev); //toggle state for hamburger menu
-  const closeNavbar = () => setToggler((prev) => (prev = false)); //clicking links in the nav (e.g. home)
+  const toggleNavbar = () => setActive((prev) => !prev); //toggle state for hamburger menu
+  const closeNavbar = () => setActive((prev) => (prev = false)); //clicking links in the nav (e.g. home)
 
   return (
     <nav className={styles.navbar}>
@@ -30,16 +30,22 @@ function Navbar() {
             </a>
           </Link>
         </div>
-        <BsList
-          size={25}
-          className={styles["nav-dropdown"]}
-          onClick={() => toggleNavbar()}
-        />
+        {active ? (
+          <BsX
+            size={30}
+            className={styles["nav-dropdown"]}
+            onClick={() => toggleNavbar()}
+          />
+        ) : (
+          <BsList
+            size={30}
+            className={styles["nav-dropdown"]}
+            onClick={() => toggleNavbar()}
+          />
+        )}
       </div>
 
-      <div
-        className={`${styles["navbar-links"]} ${toggler ? styles.open : ""}`}
-      >
+      <div className={`${styles["navbar-links"]} ${active ? styles.open : ""}`}>
         {/*<hr className={styles.open} />*/}
         <Link href="/">
           <a
