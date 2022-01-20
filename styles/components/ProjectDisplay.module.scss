@@ -104,33 +104,51 @@
 }
 
 .picture-container {
+  //display: flex;
+  //flex-direction: column;
+  //align-items: center;
   padding-top: 1em;
-  width: 100%;
 
   @include mixins.mediaQuery(laptop) {
     //decide whether i want this or not.
-    padding: 0;
-    //width: 45%;
+    //padding: 0;
   }
 }
 
-.image-container {
-  // decide whether to include this or not. makes the images bigger or smaller
+.desktop-pic-container {
   width: 100%;
-  height: auto;
-  min-height: 300px;
-  padding: 1em 0;
+}
 
-  //might not include
-  filter: grayscale(1);
-  transition: all 0.15s ease;
+.mobile-pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @include mixins.mediaQuery(desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.desktop-pic {
+  padding: 0.5em 0;
+}
+
+.mobile-pic {
+  padding: 0.5em 0em;
 
   @include mixins.mediaQuery(laptop) {
-    min-height: 300px;
+    padding: 0.5em 3em;
   }
+}
+
+.image {
+  min-height: 200px;
+
+  filter: grayscale(1);
+  transition: all 0.15s ease;
 }
 
 //might not include
-.image-container:hover {
+.image:hover {
   filter: grayscale(0);
 }

@@ -11,23 +11,77 @@ function ProjectDisplay(props) {
     type,
     year,
     technologies,
-    images,
+    desktopImgs,
+    mobileImgs,
     github,
     external,
   } = props;
-  const listImgs = images.map((img, i) => (
-    <div className={styles["image-container"]} key={i}>
-      {img !== "" ? (
+
+  const listDesktopImgs = desktopImgs?.map((img, i) =>
+    img !== "" ? (
+      <div className={`${styles["desktop-pic"]} ${styles.image}`} key={i}>
         <Image
           src={img}
           alt="Project Image"
           width={100}
           height={75}
           layout="responsive"
+          sizes="100vw"
         />
-      ) : null}
-    </div>
-  ));
+      </div>
+    ) : null
+  );
+
+  const listMobileImgs = mobileImgs?.map((img, i) =>
+    img !== "" ? (
+      <div className={`${styles["mobile-pic"]} ${styles.image}`} key={i}>
+        <Image
+          src={img}
+          alt="Project Image"
+          width={240}
+          height={500}
+          layout="intrinsic"
+        />
+      </div>
+    ) : null
+  );
+
+  // const listDesktopImgs = () => {
+  //   const desktopList =
+  //     desktopImgs.length > 0 // check if no pics first
+  //       ? desktopImgs.map((img, i) => {
+  //           <div className={styles["image-container"]} key={i}>
+  //             <Image
+  //               src={img}
+  //               alt="Project Image"
+  //               layout="fill"
+  //               sizes="50vw"
+  //               objectFit="contain"
+  //             />
+  //           </div>;
+  //         })
+  //       : null;
+  //   return desktopList;
+  // };
+
+  // const listMobileImgs = () => {
+  //   const mobileList =
+  //     mobileImgs.length > 0 // check if no pics first
+  //       ? mobileImgs.map((img, i) => {
+  //           <div className={styles["image-container"]} key={i}>
+  //             <Image
+  //               src={img}
+  //               alt="Project Image"
+  //               layout="fill"
+  //               sizes="50vw"
+  //               objectFit="contain"
+  //             />
+  //           </div>;
+  //         })
+  //       : null;
+  //   return mobileList;
+  // };
+
   const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
   return (
@@ -72,27 +126,12 @@ function ProjectDisplay(props) {
             </ul>
           </div>
           <div className={styles["picture-container"]}>
-            {listImgs}
-            {/* <div className={styles["image-container"]}>
-              {images[0] !== "" ? (
-                <Image
-                  src={images[1]}
-                  alt="Project Image"
-                  width={475}
-                  height={400}
-                  layout="responsive"
-                />
-              ) : null}
-            </div> */}
-            {/* <div className={styles["image-container"]}>
-            <Image
-              src={images[2]}
-              alt="Project Image"
-              width={1}
-              height={1}
-              layout="fill"
-            />
-          </div> */}
+            <div className={styles["desktop-pic-container"]}>
+              {listDesktopImgs}
+            </div>
+            <div className={styles["mobile-pic-container"]}>
+              {listMobileImgs}
+            </div>
           </div>
         </div>
       </div>
