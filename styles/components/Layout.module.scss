@@ -7,7 +7,7 @@
   margin: 0 auto;
   position: relative;
   min-height: 100vh;
-  max-width: 1350px;
+  max-width: 1150px;
   padding-bottom: 80px;
 
   @include mixins.mediaQuery(tablet) {
