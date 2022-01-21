@@ -27,6 +27,7 @@ function ProjectDisplay(props) {
           height={75}
           layout="responsive"
           sizes="100vw"
+          quality={100}
         />
       </div>
     ) : null
@@ -38,9 +39,10 @@ function ProjectDisplay(props) {
         <Image
           src={img}
           alt="Project Image"
-          width={240}
-          height={500}
-          layout="intrinsic"
+          width={300}
+          height={595}
+          layout="responsive"
+          quality={100}
         />
       </div>
     ) : null

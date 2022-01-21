@@ -91,14 +91,13 @@ const About = () => {
                 <br />
                 <br />
                 When I&#39;m in the mood for some self improvement outside of
-                coding, I haphazardly hop between a bunch of my interests.
-                Exploring fashion, looking up graphic design/art inspiration,
-                researching investments and crypto, or working on my (hopefully
-                soon) podcast are just a couple things I spend my time on. If
-                I&#39;m burned out, I&#39;ll be at the gym getting gains or
-                gaming on my PC (which{" "}
-                <span className={styles.span2}>really</span> helps me forget
-                about adulting).
+                coding, I randomly hop between my interests. Exploring fashion,
+                looking up graphic design/art inspiration, researching
+                investments and crypto, or working on my (hopefully soon)
+                podcast are just a couple things I spend my time on. If I&#39;m
+                burned out, I&#39;ll be at the gym getting gains or gaming on my
+                PC (which <span className={styles.span2}>really</span> helps me
+                forget about adulting).
               </p>
             </div>
 
@@ -106,7 +105,10 @@ const About = () => {
               <Image
                 src={myself}
                 alt="An image of myself"
-                layout="intrinsic"
+                width={400}
+                height={500}
+                layout="responsive"
+                objectFit="cover"
                 quality={100}
               />
             </div>

@@ -117,7 +117,7 @@ function Navbar() {
           </a>
         </Link>
         <Link href="/resume">
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             resume
           </a>
         </Link>
