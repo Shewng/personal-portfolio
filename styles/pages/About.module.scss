@@ -61,6 +61,7 @@
 
   @include mixins.mediaQuery(laptop) {
     margin-left: 1.5em;
+    max-height: 700px;
   }
 }
 

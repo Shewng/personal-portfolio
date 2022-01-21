@@ -53,7 +53,7 @@ export const projectsList = [
       "Mongoose",
     ],
     desktopImgs: ["/menji/menji1.png", "/menji/menji2.png"],
-    mobileImgs: [""],
+    mobileImgs: ["/menji/mobile1.png", "/menji/mobile2.png"],
     github: "https://github.com/Shewng/Menji",
     external: "",
   },
@@ -72,12 +72,44 @@ export const projectsList = [
     year: "2021",
     technologies: ["HTML", "SASS", "JavaScript", "React", "Next.js", "Vercel"],
     desktopImgs: ["/portfolio/portfolio1.png", "/portfolio/portfolio2.png"],
-    mobileImgs: ["/portfolio/mobile2.png", "/portfolio/mobile2.png"],
+    mobileImgs: [
+      "/portfolio/mobile1.png",
+      "/portfolio/mobile2.png",
+      "/portfolio/mobile3.png",
+      "/portfolio/mobile4.png",
+    ],
     github: "https://github.com/Shewng/personal-portfolio",
     external: "https://shwong.me",
   },
   {
     id: 4,
+    name: "ChaiSweets",
+    route: "/projects/chaisweet",
+    previewImg: "/chaisweets/chaisweets.png",
+    description:
+      "Work-in-progress website built on React, Nextjs and SASS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
+    longDescription:
+      "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer requests and payments." +
+      "\n\nChaiSweets boasts a modernistic style with a hint of edginess, influenced by contemporary architecture and ornamental stone. The color pallete is quite monochrome with some color signatures of mint, gunmental blue and a natural wood brown. These color contrasts are balanced by a clean and uncomplicated layout to finalize the design." +
+      "\n\nThere are certain things I want to try out for this project such as React-Hook-Form for customer requests and Styled Components for CSS. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well. Overall, I feel very optimistic about the timeline I have planned and the pace I'm setting for myself.",
+    type: "Personal",
+    year: "2022",
+    technologies: [
+      "HTML",
+      "SASS",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Styled Components",
+      "Vercel",
+    ],
+    desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
+    mobileImgs: [""],
+    github: "https://github.com/Shewng/ChaiSweetBakery",
+    external: "",
+  },
+  {
+    id: 5,
     name: "MakeApp",
     route: "makeapp",
     previewImg: "/makeapp/makeapp.png",
@@ -90,29 +122,17 @@ export const projectsList = [
     type: "University",
     year: "2020",
     technologies: ["Swift", "SwiftUI", "Firebase"],
-    desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
-    mobileImgs: [""],
+    desktopImgs: [""],
+    mobileImgs: [
+      "/makeapp/mobile1.png",
+      "/makeapp/mobile2.png",
+      "/makeapp/mobile3.png",
+      "/makeapp/mobile4.png",
+    ],
     github: "https://github.com/Shewng/makeup",
     external: "",
   },
-  {
-    id: 5,
-    name: "Plants Vs Zombies Clone",
-    route: "pvz",
-    previewImg: "/pvz/pvz.png",
-    description:
-      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies.",
-    longDescription:
-      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants/zombies and JavaFx to control the game engine/UI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies." +
-      "\n\nFor our year-long project, our group came up with the idea to recreate the iconic Plants Vs Zombies game. The entirety of the game was well beyond our reach, but we decided to stick to some core elements: left-right game progress, a grid placement for defense, the shovel to remove plants, natural falling sun generation and lawnmowers as a second-life. Unfortunately, we couldn't add in the sunflower unit for sun generation but made up for it by using a kill-reward system.",
-    type: "University",
-    year: "2018",
-    technologies: ["Java", "JavaFX"],
-    desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
-    mobileImgs: [""],
-    github: "https://github.com/Shewng/pvz-ms-remake",
-    external: "",
-  },
+
   {
     id: 6,
     name: "Laser Unlock",
@@ -129,9 +149,9 @@ export const projectsList = [
     desktopImgs: [""],
     mobileImgs: [
       "/laserunlock/laserunlock1.png",
-      "/laserunlock/laserunlock1.png",
-      "/laserunlock/laserunlock1.png",
-      "/laserunlock/laserunlock1.png",
+      "/laserunlock/laserunlock2.png",
+      "/laserunlock/laserunlock3.png",
+      "/laserunlock/laserunlock4.png",
     ],
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
@@ -163,7 +183,11 @@ export const projectsList = [
     type: "University",
     year: "2019",
     technologies: ["Adobe XD"],
-    desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
+    desktopImgs: [
+      "/smartspace/smartspace1.png",
+      "/smartspace/smartspace2.png",
+      "/smartspace/smartspace3.png",
+    ],
     mobileImgs: [""],
     github: "",
     external:
@@ -171,29 +195,20 @@ export const projectsList = [
   },
   {
     id: 8,
-    name: "ChaiSweets",
-    route: "/projects/chaisweet",
-    previewImg: "/chaisweets/chaisweets.png",
+    name: "Plants Vs Zombies Clone",
+    route: "pvz",
+    previewImg: "/pvz/pvz.png",
     description:
-      "Work-in-progress website built on React, Nextjs and SASS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies.",
     longDescription:
-      "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer requests and payments." +
-      "\n\nChaiSweets boasts a modernistic style with a hint of edginess, influenced by contemporary architecture and ornamental stone. The color pallete is quite monochrome with some color signatures of mint, gunmental blue and a natural wood brown. These color contrasts are balanced by a clean and uncomplicated layout to finalize the design." +
-      "\n\nThere are certain things I want to try out for this project such as React-Hook-Form for customer requests and Styled Components for CSS. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well. Overall, I feel very optimistic about the timeline I have planned and the pace I'm setting for myself.",
-    type: "Personal",
-    year: "2022",
-    technologies: [
-      "HTML",
-      "SASS",
-      "JavaScript",
-      "React",
-      "Next.js",
-      "Styled Components",
-      "Vercel",
-    ],
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants/zombies and JavaFx to control the game engine/UI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies." +
+      "\n\nFor our year-long project, our group came up with the idea to recreate the iconic Plants Vs Zombies game. The entirety of the game was well beyond our reach, but we decided to stick to some core elements: left-right game progress, a grid placement for defense, the shovel to remove plants, natural falling sun generation and lawnmowers as a second-life. Unfortunately, we couldn't add in the sunflower unit for sun generation but made up for it by using a kill-reward system.",
+    type: "University",
+    year: "2018",
+    technologies: ["Java", "JavaFX"],
     desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
     mobileImgs: [""],
-    github: "https://github.com/Shewng/ChaiSweetBakery",
+    github: "https://github.com/Shewng/pvz-ms-remake",
     external: "",
   },
 ];

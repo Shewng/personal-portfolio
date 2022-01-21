@@ -123,6 +123,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  position: relative;
 
   padding-top: 1em;
 
@@ -132,22 +133,31 @@
 }
 
 .desktop-pic {
+  min-width: 300px;
   padding: 0.5em 0;
 }
 
 .mobile-pic {
-  padding: 0.5em 0em;
+  min-width: 250px;
+  max-width: 325px;
+
+  width: 50%;
+  padding: 0.5em 3em;
 
   @include mixins.mediaQuery(laptop) {
-    padding: 0.5em 3em;
+    padding: 0.5em 0em;
   }
 }
 
 .image {
-  min-height: 200px;
+  min-height: 250px;
 
   filter: grayscale(1);
   transition: all 0.15s ease;
+
+  @include mixins.mediaQuery(laptop) {
+    min-height: 350px;
+  }
 }
 
 //might not include
