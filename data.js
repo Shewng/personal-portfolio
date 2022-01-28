@@ -103,7 +103,7 @@ export const projectsList = [
       "Styled Components",
       "Vercel",
     ],
-    desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
+    desktopImgs: [""],
     mobileImgs: [""],
     github: "https://github.com/Shewng/ChaiSweetBakery",
     external: "",
@@ -156,20 +156,6 @@ export const projectsList = [
     github: "https://github.com/Shewng/Cat-and-Laser",
     external: "",
   },
-  /**{
-    name: "Minesweeper",
-    route: "/projects/minesweeper",
-    previewImg: "/../public/nightcity.gif",
-    description:
-      "Final project for my Web-Based systems course, mimicking the popular browser game Minesweeper. Built on Javascript and JQuery to learn about front-end development and responsive design. ",
-    longDescription: "",
-    type: "University",
-    year: "2020",
-    technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
-    images: ["", "", ""],
-    github: "",
-    external: "",
-  },*/
   {
     id: 7,
     name: "SmartSpace",
@@ -199,14 +185,14 @@ export const projectsList = [
     route: "pvz",
     previewImg: "/pvz/pvz.png",
     description:
-      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies.",
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants and zombies and JavaFx to control the game engine and GUI. The game was simplified to a simple attack-defend style, with users having 6 main plants to defend against 7 types of zombies.",
     longDescription:
-      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants/zombies and JavaFx to control the game engine/UI. The game was simplified to a simple attack-defend style, with users having 3 plants to defend against 5 types of zombies." +
+      "Final project for my Introductory Computer Science course, mimicking the famous Tower Defense game Plants Vs Zombies. I built this project with Object-Orientated principles in mind, utilizing Java's class structure to create the plants/zombies and JavaFx to control the game engine/UI. The game was simplified to a simple attack-defend style, with users having 6 main plants to defend against 7 types of zombies." +
       "\n\nFor our year-long project, our group came up with the idea to recreate the iconic Plants Vs Zombies game. The entirety of the game was well beyond our reach, but we decided to stick to some core elements: left-right game progress, a grid placement for defense, the shovel to remove plants, natural falling sun generation and lawnmowers as a second-life. Unfortunately, we couldn't add in the sunflower unit for sun generation but made up for it by using a kill-reward system.",
     type: "University",
     year: "2018",
     technologies: ["Java", "JavaFX"],
-    desktopImgs: ["/smartspace/smartspace1.png", "/smartspace/smartspace2.png"],
+    desktopImgs: ["/pvz/pvz1.png", "/pvz/pvz2.png", "/pvz/pvz3.png"],
     mobileImgs: [""],
     github: "https://github.com/Shewng/pvz-ms-remake",
     external: "",
