@@ -64,9 +64,9 @@ const About = () => {
 
       <Fade bottom duration={500} distance={"1em"} delay={150}>
         <div className={styles["about-container"]}>
+          <h3>about me</h3>
           <div className={styles["about-row-container"]}>
             <div className={styles["about-me-container"]}>
-              <h3>about me</h3>
               <p>
                 Hello, my name is <span className={styles.span1}>Samuel</span>{" "}
                 and I&#39;m a graduated student from the University of Calgary
@@ -105,7 +105,7 @@ const About = () => {
               <Image
                 src={myself}
                 alt="An image of myself"
-                width={400}
+                width={385}
                 height={500}
                 layout="responsive"
                 objectFit="cover"

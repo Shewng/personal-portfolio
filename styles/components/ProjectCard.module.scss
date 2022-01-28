@@ -83,7 +83,7 @@
 
 .project-tech {
   font-family: var.$duru;
-  font-size: 0.85em;
+  font-size: 0.75em;
   font-weight: 300;
 
   margin: 0;
@@ -96,8 +96,10 @@
   flex-wrap: wrap;
 
   li {
-    padding: 0;
-    padding-right: 1.75em;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+    padding: 0 0.5em;
+    margin: 0.2em 0.4em 0.2em 0;
     line-height: 25px;
   }
 }

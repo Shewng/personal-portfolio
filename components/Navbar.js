@@ -5,8 +5,6 @@ import Link from "next/link";
 import styles from "../styles/components/Navbar.module.scss";
 import { BsList, BsX } from "react-icons/bs";
 import { projectsList } from "../data";
-import Synopsis from "./Synopsis";
-//import pdf from "../public/resume.pdf";
 
 function Navbar() {
   const [active, setActive] = useState(false);
