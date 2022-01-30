@@ -12,15 +12,14 @@ const About = () => {
   const devList = [
     "HTML",
     "CSS",
-    "Java",
     "JavaScript",
-    "React",
+    "React.js",
     "Node.js",
-    "Express",
+    "Express.js",
     "Next.js",
+    "Java",
   ];
   const toolsList = [
-    "Git",
     "GitHub",
     "MongoDB",
     "Heroku",
@@ -33,7 +32,6 @@ const About = () => {
     "Responsive Web Design",
     "Prototyping",
     "Wireframing",
-    "User Testing",
   ];
 
   //mapping out the lists
