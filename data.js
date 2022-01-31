@@ -92,7 +92,7 @@ export const projectsList = [
     technologies: ["HTML", "SASS", "React.js", "Next.js"],
     desktopImgs: [""],
     mobileImgs: [""],
-    github: "https://github.com/Shewng/ChaiSweetBakery",
+    github: "https://github.com/Shewng/ChaiSweets",
     external: "",
   },
   {
