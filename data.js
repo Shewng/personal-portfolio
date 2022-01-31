@@ -74,7 +74,7 @@ export const projectsList = [
       "/portfolio/mobile4.png",
     ],
     github: "https://github.com/Shewng/personal-portfolio",
-    external: "https://shwong.me",
+    external: "https://shwong.world",
   },
   {
     id: 4,
