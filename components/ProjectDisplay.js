@@ -48,42 +48,6 @@ function ProjectDisplay(props) {
     ) : null
   );
 
-  // const listDesktopImgs = () => {
-  //   const desktopList =
-  //     desktopImgs.length > 0 // check if no pics first
-  //       ? desktopImgs.map((img, i) => {
-  //           <div className={styles["image-container"]} key={i}>
-  //             <Image
-  //               src={img}
-  //               alt="Project Image"
-  //               layout="fill"
-  //               sizes="50vw"
-  //               objectFit="contain"
-  //             />
-  //           </div>;
-  //         })
-  //       : null;
-  //   return desktopList;
-  // };
-
-  // const listMobileImgs = () => {
-  //   const mobileList =
-  //     mobileImgs.length > 0 // check if no pics first
-  //       ? mobileImgs.map((img, i) => {
-  //           <div className={styles["image-container"]} key={i}>
-  //             <Image
-  //               src={img}
-  //               alt="Project Image"
-  //               layout="fill"
-  //               sizes="50vw"
-  //               objectFit="contain"
-  //             />
-  //           </div>;
-  //         })
-  //       : null;
-  //   return mobileList;
-  // };
-
   const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
   return (
@@ -121,7 +85,7 @@ function ProjectDisplay(props) {
               <li className={styles["external"]}>
                 {external !== "" ? (
                   <a href={external} target="_blank" rel="noopener noreferrer">
-                    live site
+                    live
                   </a>
                 ) : null}
               </li>

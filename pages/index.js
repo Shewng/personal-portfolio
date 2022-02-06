@@ -31,7 +31,7 @@ export default function Home() {
           quality={100}
         /> */}
         <video preload="" muted autoPlay loop className={styles.video}>
-          <source src="/testerfull1.mp4" />
+          <source src="/landingshort.mp4" />
         </video>
       </div>
     </Fade>
