@@ -1,5 +1,12 @@
 .image-container {
   position: relative;
-  min-height: 770px;
   margin-bottom: 0.5em;
+
+  .video {
+    filter: grayscale(1) brightness(0.75);
+    width: 100%;
+    min-height: 600px;
+    max-height: 785px;
+    object-fit: cover;
+  }
 }
