@@ -9,7 +9,7 @@ export const projectsList = [
     longDescription:
       "Single-Page Application built on the MERN stack (MongoDB, Express, React, Node.js) to learn React and further flesh out full stack skillset. The website back-end and front-end are hosted through Heroku and Netlify respectively." +
       "\n\nNailStyle was created as a template for a nail salon website that small businesses could adopt. It features an admin terminal for the management of customers, employees and appointments, as well as a page for customers to book appointments. All data is stored in the MongoDB database and fetched using our REST API calls. We also included some authentication using JSON Web Tokens, but only for administrators. Finally, the app is fully responsive on both desktop and mobile devices." +
-      "\n\nI worked with a friend to revamp a local business's nail salon website given a list of user requirements, issues to resolve and optimizations to add. The biggest issue we noticed in these types of businesses was the lack of clarity and a cohesive theme. Salon services help people feel beautiful and comfortable in their appearances, and their website should radiate the same feeling of elegance. That being said, our intention with NailStyle was to stick to a simple structure/template that could then be personalized to suit a business's desires. Therefore, the current design is as minimalistic as we would ever see it.",
+      "\n\nI worked with a friend to revamp a local business's nail salon website given a list of user requirements, issues to resolve and optimizations to add. The biggest issue we noticed in these smaller business's sites was the lack of clarity and a cohesive theme. Salon services help people feel beautiful and comfortable in their appearances, and their website should radiate the same feeling of elegance. With that being said, since NailStyle is only a template, we decided to stick to a simpler structure/template that could then be personalized to suit a business's desires. Therefore, the current design is as minimalistic as we would ever see it.",
     type: "Personal",
     year: "2021",
     technologies: [
@@ -84,9 +84,9 @@ export const projectsList = [
     description:
       "Work-in-progress website built on React, Nextjs and SASS for my sister's small local business. As she only used social media, I offered to create a more professional showcase of her business via a website to better sell, promote and track her creations. Informed by her suggestions and feedback, I designed and developed the site with the intention of a modern, slightly edgy style with a monochromatic color pallete.",
     longDescription:
-      "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer requests and payments." +
-      "\n\nChaiSweets boasts a modernistic style with a hint of edginess, influenced by contemporary architecture and ornamental stone. The color pallete is quite monochrome with some color signatures of mint, gunmental blue and a natural wood brown. These color contrasts are balanced by a clean and uncomplicated layout to finalize the design." +
-      "\n\nThere are certain things I want to try out for this project such as React-Hook-Form for customer requests and Styled Components for CSS. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well. Overall, I feel very optimistic about the timeline I have planned and the pace I'm setting for myself.",
+      "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer inquiries." +
+      "\n\nChaiSweets boasts a modernistic style with a hint of edginess, inspired by contemporary architecture and ornamental stone (marble, quartz and granite). The color pallete is quite monochrome with some color signatures of mint, sage green and a natural wood brown. These color contrasts are balanced by a clean and uncomplicated layout to finalize the design." +
+      "\n\nThere are a few things I want to play around with in this project: React-Hook-Form for customer requests, Styled Components for CSS and some testing with Jest/Enzyme. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well, with the ultimate goal of knowing how to use them intuitively.",
     type: "Personal",
     year: "2022",
     technologies: ["HTML", "SASS", "React.js", "Next.js"],
@@ -119,7 +119,6 @@ export const projectsList = [
     github: "https://github.com/Shewng/makeup",
     external: "",
   },
-
   {
     id: 6,
     name: "Laser Unlock",
@@ -129,7 +128,7 @@ export const projectsList = [
       "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created a minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions, which the user would set as their password.",
     longDescription:
       "Phone application that re-envisions our phone-unlock methods from the traditional slide-to-unlock and pin/password. Using Android Studio's sensor framework, I created a minigame that mimics a cat trying to catch a laser. In order to unlock your phone, the cat must catch the laser 3 times in the correct positions, which the user would set as their password." +
-      "\n\nLaser Unlock was developed in Android Studio which was my first experience in mobile development. Specifically, we had to dive into their sensor framework which utilizes smartphone sensors such as pressure, proximity, orientation and lumination to monitor/provide data change. The app detects when the user covers the light sensor, which translates to the cat swiping at the laser. Essentially, the user should feel like the cat trying to catch the laser themselves as it randomly moves across the screen.",
+      "\n\nLaser Unlock was developed in Android Studio which was my first experience in mobile development. Specifically, we had to dive into their sensor framework which utilizes smartphone sensors such as pressure, proximity, orientation and light to monitor data change. The unlock mechanism uses a lumination value from the light sensor, which changes when the user covers it on their phone. This was my way of mimicking a cat swiping at the laser. Essentially, the user should feel like the cat (as the head of the cat is positioned where you are) trying to catch the laser themselves as it randomly moves across the screen.",
     type: "University",
     year: "2020",
     technologies: ["Android Studio", "Java"],
