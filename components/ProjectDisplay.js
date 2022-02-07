@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { AiOutlineCode, AiOutlineDeploymentUnit } from "react-icons/ai";
+import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import styles from "../styles/components/ProjectDisplay.module.scss";
 import { Fade } from "react-reveal";
 
 function ProjectDisplay(props) {
   const {
+    id,
     name,
     longDescription,
     type,
