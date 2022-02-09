@@ -12,6 +12,7 @@ const About = () => {
   const devList = [
     "HTML",
     "CSS",
+    "SASS",
     "JavaScript",
     "React.js",
     "Node.js",
@@ -66,13 +67,14 @@ const About = () => {
           <div className={styles["about-row-container"]}>
             <div className={styles["about-me-container"]}>
               <p>
-                Hello, my name is <span className={styles.span1}>Samuel</span>{" "}
-                and I&#39;m a graduated student from the University of Calgary
-                with a BSc degree in Computer Science. My interests currently
-                lie in web design and Full Stack development. I aspire towards a
-                career which allows me to unlock my full creative potential,
-                sparking joy to the end users of my work and helping people
-                through their problems.
+                Hello, my name is{" "}
+                <span className={styles.span1}>Samuel (Sam for short)</span> and
+                I&#39;m a graduated student from the University of Calgary with
+                a BSc degree in Computer Science. My interests currently lie in
+                web design and Full Stack development. I aspire towards a career
+                which allows me to unlock my full creative potential, sparking
+                joy to the end users of my work and helping people through their
+                problems.
                 <br />
                 <br />
                 I&#39;ve been developing myself as a person inside and outside
@@ -80,22 +82,22 @@ const About = () => {
                 <span className={styles.span2}>
                   The more you learn, the easier it is to learn more.
                 </span>{" "}
-                Introducing new technologies into my work has not only made me
-                better developer, but also driven my passions in this field even
-                further. With every new project, the development process feels
-                more efficient, things make more sense and my productivity
-                increases. But most importantly, I&#39;m having fun and enjoying
-                the process as the snowball-effect keeps rolling and rolling!
+                Introducing new technologies into my work has not only improved
+                my skills as a developer, but also driven my passions in this
+                field even further. With every new project, the development
+                process becomes more efficient, things make more sense and my
+                productivity increases. Most importantly, I&#39;m enjoying the
+                process and having fun, creating a snowball-effect that keeps
+                rolling and rolling!
                 <br />
                 <br />
                 When I&#39;m in the mood for some self improvement outside of
-                coding, I randomly hop between my interests. Exploring fashion,
+                coding, I hop between my various interests. Exploring fashion,
                 looking up graphic design/art inspiration, researching
                 investments and crypto, or working on my (hopefully soon)
                 podcast are just a couple things I spend my time on. If I&#39;m
-                burned out, I&#39;ll be at the gym getting gains or gaming on my
-                PC (which <span className={styles.span2}>really</span> helps me
-                forget about adulting).
+                burned out, I&#39;ll be at the gym for a mental break or gaming
+                on my PC with friends.
               </p>
             </div>
 
