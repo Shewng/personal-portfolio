@@ -20,7 +20,11 @@ export const projectsList = [
       "Express.js",
       "MongoDB",
     ],
-    desktopImgs: ["/nailstyle/nailstyle1.png", "/nailstyle/nailstyle2.png"],
+    desktopImgs: [
+      "/nailstyle/nailstyle1.png",
+      "/nailstyle/nailstyle2.png",
+      "/nailstyle/nailstyle3.png",
+    ],
     mobileImgs: ["/nailstyle/mobile1.png", "/nailstyle/mobile2.png"],
     github: "https://github.com/Shewng/NailStyle",
     external: "https://hxnails.ca",
@@ -47,7 +51,11 @@ export const projectsList = [
       "MongoDB",
       "Mongoose",
     ],
-    desktopImgs: ["/menji/menji1.png", "/menji/menji2.png"],
+    desktopImgs: [
+      "/menji/menji1.png",
+      "/menji/menji2.png",
+      "/menji/menji3.png",
+    ],
     mobileImgs: ["/menji/mobile1.png", "/menji/mobile2.png"],
     github: "https://github.com/Shewng/Menji",
     external: "",
@@ -66,7 +74,11 @@ export const projectsList = [
     type: "Personal",
     year: "2021",
     technologies: ["HTML", "SASS", "React.js", "Next.js"],
-    desktopImgs: ["/portfolio/portfolio1.png", "/portfolio/portfolio2.png"],
+    desktopImgs: [
+      "/portfolio/portfolio1.png",
+      "/portfolio/portfolio2.png",
+      "/portfolio/portfolio3.png",
+    ],
     mobileImgs: [
       "/portfolio/mobile1.png",
       "/portfolio/mobile2.png",
@@ -87,7 +99,7 @@ export const projectsList = [
       "When my sister started ChaiSweets, she never intended for it to become a side-hustle, instead more of a way to entertain her baking-craves. The popularity she gained from the desserts pushed her to establish a dedicated social media page, followed by some business cards and promo deals. After a while, she requested me to help her create a site to better showcase her creations. It would also help her track what she has made as well as streamline customer inquiries." +
       "\n\nChaiSweets boasts a modernistic style with a hint of edginess, inspired by contemporary architecture and ornamental stone (marble, quartz and granite). The color pallete is quite monochrome with some color signatures of mint, sage green and a natural wood brown. These color contrasts are balanced by a clean and uncomplicated layout to finalize the design." +
       "\n\nThere are a few things I want to play around with in this project: React-Hook-Form for customer requests, Styled Components for CSS and some testing with Jest/Enzyme. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well, with the ultimate goal of knowing how to use them intuitively.",
-    type: "Personal",
+    type: "Personal, Work-in Progress",
     year: "2022",
     technologies: ["HTML", "SASS", "React.js", "Next.js"],
     desktopImgs: ["/chaisweets/chaisweets1.png", "/chaisweets/chaisweets2.png"],
