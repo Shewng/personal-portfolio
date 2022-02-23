@@ -90,7 +90,7 @@ export const projectsList = [
     type: "Personal",
     year: "2022",
     technologies: ["HTML", "SASS", "React.js", "Next.js"],
-    desktopImgs: [""],
+    desktopImgs: ["/chaisweets/chaisweets1.png", "/chaisweets/chaisweets2.png"],
     mobileImgs: [""],
     github: "https://github.com/Shewng/ChaiSweets",
     external: "",
