@@ -51,7 +51,7 @@ export const projectsList = [
       "Express",
       "MongoDB",
       "Mongoose",
-      "AdobeXD",
+      "Adobe XD",
     ],
     desktopImgs: [
       "/menji/menji1.png",
@@ -122,7 +122,7 @@ export const projectsList = [
       "\n\nThe project had both development and business aspects to teach us how to market our own apps. From our prototypes, we had to narrow down our functionality to the core reasons of using MakeApp, which was the aspect of sharing and showcasing makeup routines. Advertising this niche towards a new social media app and developing something that matches it was a difficult but important learning process.",
     type: "University",
     year: "2020",
-    technologies: ["SwiftUI", "Firebase", "AdobeXD"],
+    technologies: ["SwiftUI", "Firebase", "Adobe XD"],
     desktopImgs: [""],
     mobileImgs: [
       "/makeapp/mobile1.png",
