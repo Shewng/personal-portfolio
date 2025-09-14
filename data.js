@@ -19,6 +19,7 @@ export const projectsList = [
       "Node.js",
       "Express.js",
       "MongoDB",
+      "Figma",
     ],
     desktopImgs: [
       "/nailstyle/nailstyle1.png",
@@ -50,6 +51,7 @@ export const projectsList = [
       "Express",
       "MongoDB",
       "Mongoose",
+      "AdobeXD",
     ],
     desktopImgs: [
       "/menji/menji1.png",
@@ -73,7 +75,7 @@ export const projectsList = [
       "\n\nI hope to create a modular/scalabe version that lets me add in different elements and features easily. It would have parts of a blog, parts of a portfolio, parts of a dashboard-esq style, many parts that can be personalized. My end goal of it all would be a website that feels like an autobiography/log of my life, thoughts and work.",
     type: "Personal",
     year: "2021",
-    technologies: ["HTML", "SASS", "React.js", "Next.js"],
+    technologies: ["React.js", "Next.js", "SASS", "Figma"],
     desktopImgs: [
       "/portfolio/portfolio1.png",
       "/portfolio/portfolio2.png",
@@ -101,7 +103,7 @@ export const projectsList = [
       "\n\nThere are a few things I want to play around with in this project: React-Hook-Form for customer requests, Styled Components for CSS and some testing with Jest/Enzyme. I'm also eagered to use more React hooks and want to learn how to create my own hooks as well, with the ultimate goal of knowing how to use them intuitively.",
     type: "Personal, Work-in Progress",
     year: "2022",
-    technologies: ["HTML", "SASS", "React.js", "Next.js"],
+    technologies: ["Figma"],
     desktopImgs: ["/chaisweets/chaisweets1.png", "/chaisweets/chaisweets2.png"],
     mobileImgs: [""],
     github: "https://github.com/Shewng/ChaiSweets",
@@ -120,7 +122,7 @@ export const projectsList = [
       "\n\nThe project had both development and business aspects to teach us how to market our own apps. From our prototypes, we had to narrow down our functionality to the core reasons of using MakeApp, which was the aspect of sharing and showcasing makeup routines. Advertising this niche towards a new social media app and developing something that matches it was a difficult but important learning process.",
     type: "University",
     year: "2020",
-    technologies: ["SwiftUI", "Firebase"],
+    technologies: ["SwiftUI", "Firebase", "AdobeXD"],
     desktopImgs: [""],
     mobileImgs: [
       "/makeapp/mobile1.png",
