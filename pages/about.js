@@ -5,7 +5,7 @@ import myself from "../public/me.jpg";
 import { GoGear } from "react-icons/go";
 import { CgIfDesign } from "react-icons/cg";
 import { HiCode } from "react-icons/hi";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   //list of skills
@@ -61,7 +61,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fade bottom duration={500} distance={"1em"} delay={150}>
+      <Fade duration={350} triggerOnce>
         <div className={styles["about-container"]}>
           <h3>about me</h3>
           <div className={styles["about-row-container"]}>

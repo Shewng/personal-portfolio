@@ -4,12 +4,12 @@ import Image from "next/image";
 import styles from "../styles/pages/Home.module.scss";
 import gif from "../public/nightcity.gif";
 //import vid from "../public/homevid.mp4";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Synopsis from "../components/Synopsis";
 
 export default function Home() {
   return (
-    <Fade bottom duration={500} distance={"1em"} delay={150}>
+    <Fade duration={350} triggerOnce>
       <Head>
         <title>Samuel Wong</title>
         <meta

@@ -2,7 +2,7 @@ import Head from "next/head";
 import ProjectCard from "../../components/ProjectCard";
 import styles from "../../styles/pages/Projects.module.scss";
 import { projectsList } from "../../data";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
@@ -14,11 +14,11 @@ const Projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fade bottom duration={500} distance={"1em"} delay={150}>
+      <Fade duration={500} triggerOnce>
         <div className={styles["projects-container"]}>
           <h3>projects</h3>
           {projectsList.map((project) => (
-            <Fade duration={250} key={project.id}>
+            <Fade duration={350} triggerOnce key={project.id}>
               <div className={styles["project-display"]}>
                 <ProjectCard {...project} />
               </div>

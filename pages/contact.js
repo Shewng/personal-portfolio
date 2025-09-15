@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/pages/Contact.module.scss";
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Fade bottom duration={500} distance={"1em"} delay={150}>
+      <Fade duration={350} triggerOnce>
         <div className={styles["contact-container"]}>
           <h3>contact</h3>
           <p className={styles.message}>

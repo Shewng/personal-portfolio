@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AiOutlineCode, AiOutlineDeploymentUnit } from "react-icons/ai";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import styles from "../styles/components/ProjectDisplay.module.scss";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function ProjectDisplay(props) {
   const {
@@ -53,7 +53,7 @@ function ProjectDisplay(props) {
   const listTechs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
   return (
-    <Fade bottom duration={500} distance={"1em"}>
+    <Fade duration={350} triggerOnce>
       <div className={styles["project-page-container"]}>
         <div className={styles["description-container"]}>
           <h3>{name}</h3>

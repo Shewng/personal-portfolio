@@ -3,7 +3,6 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Synopsis from "./Synopsis";
 import styles from "../styles/components/Layout.module.scss";
-import { Fade } from "react-reveal";
 
 const Layout = ({ children }) => {
   const router = useRouter(); //get the current route/path from /pages

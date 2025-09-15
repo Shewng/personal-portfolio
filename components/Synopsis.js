@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../styles/components/Synopsis.module.scss";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 function Synopsis() {
   return (
-    <Fade bottom duration={750} distance={"1em"}>
+    <Fade duration={350} triggerOnce>
       <div className={styles["synopsis-container"]}>
         <span>Samuel Wong :</span>
         <p>
